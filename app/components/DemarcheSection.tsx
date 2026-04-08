@@ -31,7 +31,7 @@ const steps: Step[] = [
 
 export default function DemarcheSection() {
   return (
-    <section className="bg-white px-6 py-24 text-[#040325] sm:px-8 lg:px-10 lg:py-[112px] id='services'">
+    <section className="bg-white px-6 py-24 text-[#040325] sm:px-8 lg:px-10 lg:py-[112px] " id='services'>
       <div className="mx-auto max-w-[1280px]">
         <div className="mx-auto max-w-[860px] text-center">
           <h2
