@@ -54,7 +54,7 @@ function Chevron() {
 
 export default function Faq() {
   return (
-    <section className="bg-[#ececec] px-6 py-16 sm:px-8 lg:px-10 lg:py-20 bg-white text-[#040325]">
+    <section className="bg-[#ececec] px-6 py-16 sm:px-8 lg:px-10 lg:py-20 bg-white text-[#040325]" id="questions">
       <div className="mx-auto max-w-[1280px]">
         <div className="mx-auto max-w-[930px]">
           <header className="text-center">
