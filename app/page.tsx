@@ -19,7 +19,7 @@ export default function HomePage() {
         <Hero />
         <AudienceSection />
         <CitationSection />
-        <TestimonialSection />
+        {/* <TestimonialSection /> */}
         <InfosSection />
         <ExpertiseSection />
         <DemarcheSection />
