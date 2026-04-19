@@ -19,7 +19,7 @@ export default function Navbar() {
           <div className="justify-self-start">
           <Link href="/" className="flex items-center">
             <Image
-              src="/logoexoneo.svg"
+              src="/Logoexoneo.svg"
               alt="Exonéo"
               width={120}
               height={40}
