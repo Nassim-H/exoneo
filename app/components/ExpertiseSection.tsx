@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 type Card = {
   icon: "euros" | "target";
   iconBg: string;
@@ -44,51 +46,52 @@ function CardIcon({ icon }: { icon: Card["icon"] }) {
 
 function PersonIllustration() {
   return (
-    <img
-      src="/Profil.png"
-      alt="Profil"
-      className="block h-auto w-full max-w-[430px]"
-    />
+    <div className="relative h-full w-full overflow-hidden">
+      <Image
+        src="/Profil.png"
+        alt="Profil"
+        width={760}
+        height={980}
+        className="ml-auto block h-full w-auto min-w-[420px] max-w-none object-contain lg:translate-x-[10%] xl:translate-x-[16%]"
+        priority={false}
+      />
+    </div>
   );
 }
 
 export default function ExpertiseSection() {
   return (
-    <section className="bg-white px-6 py-24 text-[#040325] sm:px-8 lg:px-10 lg:py-[112px]">
-      <div className="mx-auto max-w-[1280px]">
-        <div className="mx-auto max-w-[820px] text-center">
-          <h2
-            className="text-balance text-[clamp(2.3rem,5vw,3rem)] font-semibold leading-[1.15] text-[#040325]"
-            style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}
-          >
+    <section className="overflow-hidden bg-white px-6 py-28 text-[#040325] sm:px-8 lg:px-10 lg:py-[128px]">
+      <div className="mx-auto max-w-[1500px]">
+        <div className="mx-auto max-w-[980px] text-center">
+          <h2 className="text-balance text-[clamp(2.5rem,5vw,3.2rem)] font-semibold leading-[1.15] text-[#040325]">
             Une expertise qui change la donne
           </h2>
         </div>
 
-        <div className="mt-14 grid items-stretch gap-6 lg:grid-cols-[1.05fr_1.05fr_0.95fr] lg:gap-6">
+        <div className="mt-20 grid items-stretch gap-8 lg:grid-cols-[1.05fr_1.05fr_1.15fr] lg:gap-8">
           {cards.map((card) => (
             <article
               key={card.title}
-              className="rounded-[8px] bg-[#f5fbff] px-6 py-8 text-center shadow-[0_0_0_1px_rgba(200,233,253,0.5)]"
+              className="rounded-[8px] bg-[#f5fbff] px-8 py-10 text-center shadow-[0_0_0_1px_rgba(200,233,253,0.5)]"
             >
-              <div className={`mx-auto flex h-9 w-9 items-center justify-center rounded-[4px] ${card.iconBg}`}>
+              <div className={`mx-auto flex h-11 w-11 items-center justify-center rounded-[6px] ${card.iconBg}`}>
                 <CardIcon icon={card.icon} />
               </div>
 
-              <h3
-                className="mt-6 text-[24px] font-bold leading-[1.4] text-[#040325]"
-                style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}
-              >
+              <h3 className="mt-7 text-[28px] font-bold leading-[1.35] text-[#040325]">
                 {card.title}
               </h3>
 
-              <p className="mx-auto mt-4 max-w-[330px] text-[16px] leading-[1.5] text-[#2e2e2e]">
+              <p className="mx-auto mt-5 max-w-[380px] text-[18px] leading-[1.6] text-[#2e2e2e]">
                 {card.description}
               </p>
             </article>
           ))}
 
-          <PersonIllustration />
+          <div className="relative min-h-[420px] lg:min-h-[560px]">
+            <PersonIllustration />
+          </div>
         </div>
       </div>
     </section>

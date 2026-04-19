@@ -31,38 +31,35 @@ const steps: Step[] = [
 
 export default function DemarcheSection() {
   return (
-    <section className="bg-white px-6 py-24 text-[#040325] sm:px-8 lg:px-10 lg:py-[112px] " id='services'>
-      <div className="mx-auto max-w-[1280px]">
-        <div className="mx-auto max-w-[860px] text-center">
-          <h2
-            className="text-balance text-[clamp(2.3rem,5vw,3rem)] font-semibold leading-[1.15] text-[#040325]"
-            style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}
-          >
+    <section className="bg-white px-6 py-28 text-[#040325] sm:px-8 lg:px-10 lg:py-[128px]" id="services">
+      <div className="mx-auto max-w-[1500px]">
+        <div className="mx-auto max-w-[980px] text-center">
+          <h2 className="text-balance text-[clamp(2.5rem,5vw,3.2rem)] font-semibold leading-[1.15] text-[#040325]">
             Une démarche claire
           </h2>
-          <p className="mx-auto mt-4 max-w-[760px] text-[18px] leading-[1.25] text-[#205fed]">
+
+          <p className="mx-auto mt-5 max-w-[820px] text-[20px] leading-[1.5] text-[#205fed]">
             Notre objectif : vous faire passer d'une situation floue à une structure fiscalement
             optimisée, étape par étape, avec une visibilité totale sur le processus.
           </p>
         </div>
 
-        <div className="mt-16 grid gap-12 lg:grid-cols-3 lg:gap-8">
+        <div className="mt-20 grid gap-14 lg:grid-cols-3 lg:gap-10">
           {steps.map((step) => (
             <article key={step.number} className="text-center">
-              <div className={`text-[clamp(4rem,8vw,5.5rem)] font-semibold leading-none ${step.numberColor}`}>
+              
+              <div className={`text-[clamp(5rem,9vw,6.5rem)] font-semibold leading-none ${step.numberColor}`}>
                 {step.number}
               </div>
 
-              <h3
-                className="mt-4 text-[20px] font-bold leading-[1.35] text-[#040325]"
-                style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}
-              >
+              <h3 className="mt-6 text-[26px] font-bold leading-[1.35] text-[#040325]">
                 {step.title}
               </h3>
 
-              <p className="mx-auto mt-3 max-w-[320px] text-[16px] leading-[1.5] text-[#5e697a]">
+              <p className="mx-auto mt-4 max-w-[380px] text-[18px] leading-[1.6] text-[#5e697a]">
                 {step.description}
               </p>
+
             </article>
           ))}
         </div>

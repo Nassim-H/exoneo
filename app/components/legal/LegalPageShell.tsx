@@ -15,7 +15,7 @@ export default function LegalPageShell({ title, description, children }: LegalPa
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <h1
               className="text-[clamp(2rem,4vw,3.2rem)] font-semibold leading-[1.06] tracking-[-0.02em]"
-              style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}
+
             >
               {title}
             </h1>

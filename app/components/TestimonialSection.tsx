@@ -36,7 +36,7 @@ export default function TestimonialSection() {
               ))}
             </div>
 
-            
+
           </div>
 
           <div className="mt-10 flex justify-center">

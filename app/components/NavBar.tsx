@@ -6,7 +6,6 @@ import Image from "next/image";
 
 const navItems = [
   { label: "Services", href: "#services" },
-  // { label: "Avis", href: "#avis" },
   { label: "Questions", href: "#questions" },
   { label: "À propos", href: "#a-propos" },
 ];
@@ -15,36 +14,37 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-[#e7e4dc] bg-white/90 backdrop-blur-xl">
-      <div className="mx-auto flex h-[76px] max-w-[1280px] items-center justify-between px-4 sm:px-6 lg:px-10">
-        <Link href="/" className="flex items-center">
-          <Image
-            src="/logo.svg"
-            alt="Exonéo"
-            width={120}
-            height={40}
-            priority
-            className="h-auto w-[108px] sm:w-[116px]"
-          />
-        </Link>
+    <header className="sticky top-0 z-50 w-full border-b border-[#C8E9FD] bg-white">  
+<div className="mx-auto grid h-[86px] w-full max-w-[1700px] grid-cols-[1fr_auto_1fr] items-center px-4 sm:px-6 lg:px-10">
+          <div className="justify-self-start">
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/logoexoneo.svg"
+              alt="Exonéo"
+              width={120}
+              height={40}
+              priority
+              className="h-auto w-[108px] sm:w-[116px]"
+            />
+          </Link>
+        </div>
 
-        <nav className="hidden items-center gap-8 md:flex lg:gap-10">
+        <nav className="hidden items-center gap-8 justify-self-center md:flex lg:gap-10">
           {navItems.map((item) => (
             <a
               key={item.label}
               href={item.href}
-              className="text-[15px] font-medium tracking-[-0.01em] text-[#040325] transition-opacity hover:opacity-60"
+              className="text-[16px] font-medium tracking-[-0.01em] text-[#040325] transition-opacity hover:opacity-60"
             >
               {item.label}
             </a>
           ))}
         </nav>
 
-        <div className="hidden md:block">
+        <div className="hidden justify-self-end md:block">
           <a
             href="#reservation"
-            className="inline-flex h-[44px] items-center rounded-[4px] bg-[#4141f5] px-5 text-[14px] font-bold text-white shadow-[0_10px_24px_rgba(65,65,245,0.18)] transition-transform duration-200 hover:-translate-y-0.5 hover:bg-[#3535ef] lg:px-6 lg:text-[15px]"
-          >
+            className="inline-flex h-[44px] items-center justify-center gap-2 rounded-[4px] bg-[#4141F5] px-6 text-[16px] tracking-[-0.01em] font-semibold text-white"          >
             Réserver un appel gratuit
           </a>
         </div>
@@ -54,7 +54,7 @@ export default function Navbar() {
           aria-label={isOpen ? "Fermer le menu" : "Ouvrir le menu"}
           aria-expanded={isOpen}
           onClick={() => setIsOpen((prev) => !prev)}
-          className="inline-flex h-11 w-11 items-center justify-center rounded-[8px] border border-[#e7e4dc] text-[#040325] md:hidden"
+          className="inline-flex h-11 w-11 justify-self-end items-center justify-center rounded-[8px] border border-[#e7e4dc] text-[#040325] md:hidden"
         >
           <span className="relative block h-5 w-5">
             <span
@@ -73,13 +73,12 @@ export default function Navbar() {
               }`}
             />
           </span>
-
         </button>
       </div>
 
       {isOpen && (
         <div className="border-t border-[#e7e4dc] bg-white md:hidden">
-          <nav className="mx-auto flex max-w-[1280px] flex-col px-4 py-4 sm:px-6 lg:px-10">
+          <nav className="flex w-full flex-col px-4 py-4 sm:px-6 lg:px-10">
             {navItems.map((item) => (
               <a
                 key={item.label}

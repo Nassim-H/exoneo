@@ -39,8 +39,8 @@ const faqItems: FaqItem[] = [
 function Chevron() {
   return (
     <svg
-      width="14"
-      height="14"
+      width="16"
+      height="16"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -54,32 +54,30 @@ function Chevron() {
 
 export default function Faq() {
   return (
-    <section className="bg-[#ececec] px-6 py-16 sm:px-8 lg:px-10 lg:py-20 bg-white text-[#040325]" id="questions">
-      <div className="mx-auto max-w-[1280px]">
-        <div className="mx-auto max-w-[930px]">
+    <section className="bg-white px-6 py-28 text-[#040325] sm:px-8 lg:px-10 lg:py-[128px]" id="questions">
+      <div className="mx-auto max-w-[1500px]">
+        <div className="mx-auto max-w-[1080px]">
           <header className="text-center">
-            <h2
-              className="text-[clamp(2.1rem,4vw,3.25rem)] font-semibold leading-[1.08] tracking-[-0.02em] text-[#05052a]"
-              style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}
-            >
+            <h2 className="text-[clamp(2.5rem,4.5vw,3.4rem)] font-semibold leading-[1.08] tracking-[-0.02em] text-[#05052a]">
               Questions fréquentes
             </h2>
-            <p className="mt-4 text-[20px] leading-[1.32] text-[#4141f5] sm:text-[23px]">
+
+            <p className="mt-5 text-[22px] leading-[1.4] text-[#4141f5] sm:text-[24px]">
               Les réponses aux questions que vous vous posez avant de prendre rendez-vous.
             </p>
           </header>
 
-          <div className="mt-14 space-y-[2px]">
+          <div className="mt-16 space-y-[2px]">
             {faqItems.map((item) => (
               <details key={item.question} className="group border-b border-[#4141f5]">
-                <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5 text-[22px] font-normal leading-[1.3] text-[#1a1a1a] marker:content-none">
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-8 py-6 text-[24px] font-normal leading-[1.3] text-[#1a1a1a] marker:content-none">
                   <span>{item.question}</span>
                   <Chevron />
                 </summary>
 
-                <div className="pb-6 pr-8 text-[18px] leading-[1.48] text-[#2e3245]">
+                <div className="pb-8 pr-10 text-[20px] leading-[1.6] text-[#2e3245]">
                   {item.answer.map((paragraph) => (
-                    <p key={paragraph} className="mt-3 first:mt-0">
+                    <p key={paragraph} className="mt-4 first:mt-0">
                       {paragraph}
                     </p>
                   ))}

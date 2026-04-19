@@ -1,0 +1,347 @@
+/* ============================================
+   EXONEO — Typographie extraite du Figma
+   Maquette: UI Exonéo (node 10460:1616)
+   ============================================ */
+
+/* ─── FONTS ─── */
+/* Adobe Fonts (Typekit) — Degular + Loretta */
+@import url("https://use.typekit.net/pcq5qif.css");
+
+/* Google Fonts — Instrument Sans + Instrument Serif */
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Instrument+Serif&display=swap");
+
+/* ─── COULEURS TEXTE ─── */
+:root {
+  --text-primary: #040325;       /* Texte principal (titres, corps) */
+  --text-dark: #0a0f19;          /* Texte très foncé (variante) */
+  --text-gray: #5e697a;          /* Texte secondaire / descriptions */
+  --text-gray-medium: #7f7f7f;   /* Texte gris moyen (étapes) */
+  --text-white: #ffffff;          /* Texte blanc (sur fond coloré) */
+  --text-brand: #4141f5;          /* Texte violet/bleu marque */
+  --text-blue: #205fed;           /* Texte bleu (accent) */
+  --text-dark-blue: #142134;      /* Texte bouton outline */
+}
+
+/* ============================================
+   TITRES (font: Loretta Variable)
+   font-family: "loretta-variable", sans-serif;
+   ============================================ */
+
+/* H1 — Hero principal */
+/* Ex: "Réduisons ensemble votre charge fiscale" */
+.h1-hero {
+  font-family: "loretta-variable", sans-serif;
+  font-variation-settings: "wght" 600;
+  font-size: 56px;
+  line-height: 120%; /* 67.2px */
+  letter-spacing: 0.02em; /* 2% */
+  color: var(--text-primary);
+}
+
+/* H2 — Titre section large */
+/* Ex: "Les questions que vous vous posez" */
+.h2-section-large {
+  font-family: "loretta-variable", sans-serif;
+  font-variation-settings: "wght" 600;
+  font-size: 48px;
+  line-height: 120%; /* 57.6px */
+  letter-spacing: 0;
+  color: var(--text-primary);
+}
+
+/* H3 — Titre section moyen */
+/* Ex: "À qui s'adresse notre expertise ?" */
+.h3-section {
+  font-family: "loretta-variable", sans-serif;
+  font-variation-settings: "wght" 600;
+  font-size: 40px;
+  line-height: 120%; /* 48px */
+  letter-spacing: 0;
+  color: var(--text-primary);
+}
+
+/* H4 — Sous-titre quote */
+/* Ex: citation client, "Honoraires" */
+.h4-quote {
+  font-family: "loretta-variable", sans-serif;
+  font-variation-settings: "wght" 700;
+  font-size: 24px;
+  line-height: 140%; /* 33.6px */
+  letter-spacing: 0;
+  color: #000000;
+}
+
+/* H5 — Titre carte/profil */
+/* Ex: "Professions médicales", "Dirigeants de TPE / PME" */
+.h5-card-title {
+  font-family: "loretta-variable", sans-serif;
+  font-variation-settings: "wght" 600;
+  font-size: 20px;
+  line-height: 140%; /* 28px */
+  letter-spacing: 0;
+  color: var(--text-brand);
+}
+
+/* H6 — Tagline / petit titre */
+/* Ex: "Garantie", "Contact" */
+.h6-tagline {
+  font-family: "loretta-variable", sans-serif;
+  font-variation-settings: "wght" 600;
+  font-size: 16px;
+  line-height: 150%; /* 24px */
+  letter-spacing: 0;
+  color: var(--text-dark);
+}
+
+
+/* ============================================
+   CORPS DE TEXTE (font: Degular)
+   font-family: "degular", sans-serif;
+   ============================================ */
+
+/* Body Large — Texte intro/description */
+/* Ex: "Nos avocats fiscalistes accompagnent..." */
+.body-large {
+  font-family: "degular", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%; /* 21.6px */
+  letter-spacing: 0;
+  color: var(--text-primary);
+}
+
+/* Body Large Semi-Bold — Sous-titres corps */
+/* Ex: "plus de 300 Chefs d'entreprise...", stats */
+.body-large-semibold {
+  font-family: "degular", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%; /* 27px */
+  letter-spacing: 0;
+  color: var(--text-primary);
+}
+
+/* Body Large Bold — FAQ questions */
+/* Ex: "Comment réduire mes impôts?" */
+.body-large-bold {
+  font-family: "degular", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%; /* 27px */
+  letter-spacing: 0;
+  color: var(--text-dark);
+}
+
+/* Body — Texte standard */
+/* Ex: liens nav, descriptions cartes */
+.body {
+  font-family: "degular", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%; /* 24px */
+  letter-spacing: 0;
+  color: var(--text-primary);
+}
+
+/* Body Bold — Boutons */
+/* Ex: "Réserver un appel gratuit" */
+.body-bold {
+  font-family: "degular", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%; /* 24px */
+  letter-spacing: 0;
+}
+
+/* Body Semibold — Labels, noms */
+/* Ex: "Daniel Couroux", "Rigueur juridique" */
+.body-semibold {
+  font-family: "degular", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%; /* 24px */
+  letter-spacing: 0;
+  color: var(--text-primary);
+}
+
+/* Body Medium — Stats/chiffres */
+/* Ex: "30K€/moyenne exonérés par client" (la partie bold) */
+.body-stat-number {
+  font-family: "degular", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%; /* 30px */
+  letter-spacing: 0;
+  color: var(--text-primary);
+}
+
+/* Body Medium — Stats/texte */
+/* Ex: "€/moyenne exonérés par client" (la partie regular) */
+.body-stat-text {
+  font-family: "degular", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%; /* 30px */
+  letter-spacing: 0;
+  color: var(--text-primary);
+}
+
+/* Body Medium Semibold — Titres étapes */
+/* Ex: "Diagnostic", "Scenarios d'optimisation" */
+.body-step-title {
+  font-family: "degular", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 109%; /* ~21.8px */
+  letter-spacing: 0;
+  color: var(--text-primary);
+}
+
+/* Small — Descriptions cartes */
+/* Ex: Textes explicatifs sous les titres */
+.small {
+  font-family: "degular", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%; /* 21px */
+  letter-spacing: 0;
+  color: var(--text-gray);
+}
+
+/* Small Semibold — Labels accent */
+/* Ex: "Nous vous aidons à :" */
+.small-semibold {
+  font-family: "degular", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%; /* 21px */
+  letter-spacing: 0;
+  color: var(--text-brand);
+}
+
+/* Logo — Lettres "E x o n e o" */
+.logo-text {
+  font-family: "degular", sans-serif;
+  font-weight: 800; /* Black */
+  font-size: 84px;
+  line-height: 150%;
+  letter-spacing: 0;
+  color: var(--text-white);
+}
+
+/* Big number decorative */
+/* Ex: "1", "2", "3", "4" (gros chiffres) */
+.big-number {
+  font-family: "degular", sans-serif;
+  font-weight: 800; /* Black */
+  font-size: 64px;
+  line-height: 120%;
+  letter-spacing: 0;
+  color: var(--text-brand);
+}
+
+
+/* ============================================
+   TEXTES INSTRUMENT SANS (Google Font)
+   font-family: "Instrument Sans", sans-serif;
+   ============================================ */
+
+/* Liste à puces — Texte normal */
+/* Ex: "• Optimiser la structuration de votre passage en SEL" */
+.list-item {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0;
+  color: var(--text-gray);
+}
+
+/* Étapes — Titre */
+/* Ex: "Consultation (30-40 min)", "Appel découverte offert (15 min)" */
+.step-label {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
+}
+
+/* Étapes — Titre medium */
+/* Ex: "Diagnostic de votre situation", "Scénarios d'optimisation" */
+.step-title {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0;
+  color: var(--text-gray-medium);
+}
+
+/* Étapes — Label bold */
+/* Ex: "Ce que nous faisons :" */
+.step-detail-label {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22.75px;
+  letter-spacing: 0;
+  color: var(--text-gray-medium);
+}
+
+/* Étapes — Texte description */
+/* Ex: " Nous analysons votre structure actuelle..." */
+.step-detail-text {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22.75px;
+  letter-spacing: 0;
+  color: #000000;
+}
+
+
+/* ============================================
+   INSTRUMENT SERIF (Google Font)
+   font-family: "Instrument Serif", serif;
+   ============================================ */
+
+/* Numéros d'étapes */
+/* Ex: "01", "02", "03", "04" */
+.step-number {
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: 0;
+  color: #000000;
+}
+
+
+/* ============================================
+   PETITS TEXTES (Roboto — à vérifier si intentionnel)
+   ============================================ */
+
+/* Note: Roboto est utilisé dans quelques endroits, probablement
+   un résidu du template. Vérifier si c'est voulu ou si ça doit
+   être remplacé par Degular. */
+
+/* Roboto small — descriptions sous étapes */
+.roboto-small {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%; /* 18px */
+  letter-spacing: 0;
+  color: var(--text-gray);
+}
+
+/* Footer small */
+.footer-text {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0;
+  color: var(--text-gray);
+}

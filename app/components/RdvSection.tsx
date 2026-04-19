@@ -1,14 +1,14 @@
 function AppointmentCard() {
   return (
-    <article className="w-full max-w-[300px] rounded-[8px] bg-[#efefef] p-4 text-black shadow-sm sm:p-4.5">
-      <div className="flex items-start gap-2.5">
+    <article className="w-full max-w-[460px] rounded-[10px] bg-white p-6 text-black shadow-sm lg:p-7">
+      <div className="flex items-start gap-3">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
           strokeWidth="1.8"
-          className="mt-0.5 h-4.5 w-4.5 shrink-0 text-black"
+          className="mt-1 h-5 w-5 shrink-0 text-black"
           aria-hidden="true"
         >
           <path
@@ -19,18 +19,19 @@ function AppointmentCard() {
         </svg>
 
         <div>
-          <p className="text-[16px] font-medium leading-[1.2] text-black sm:text-[17px]">
+          <p className="text-[20px] font-medium leading-[1.3] text-black">
             Appel découverte offert (15 min)
           </p>
-          <p className="mt-1.5 text-[13px] leading-[1.45] text-neutral-600 sm:text-[14px]">
+
+          <p className="mt-2 text-[16px] leading-[1.55] text-neutral-600">
             Vérifiez dès maintenant que nous sommes le bon interlocuteur pour votre situation.
           </p>
         </div>
       </div>
 
       <a
-        href="#reservation"
-        className="mt-4 inline-flex w-full items-center justify-center rounded-[4px] bg-[#4a46f2] px-3 py-2.5 text-[14px] font-semibold text-white transition-opacity hover:opacity-90"
+        href="https://forms.gle/s4Dc2FMC87wEpVse8"
+        className="mt-6 inline-flex h-[52px] w-full items-center justify-center rounded-[6px] bg-[#4a46f2] px-5 text-[18px] font-semibold text-white transition-opacity hover:opacity-90"
       >
         Réserver un appel gratuit
       </a>
@@ -40,26 +41,23 @@ function AppointmentCard() {
 
 export default function RdvSection() {
   return (
-    <section className="w-full bg-white px-6 py-16 text-[#040325] sm:px-8 lg:px-10 lg:py-20">
-      <div className="mx-auto grid max-w-[1280px] overflow-hidden lg:grid-cols-2">
-        <div className="min-h-[320px] bg-white lg:min-h-[520px]">
+    <section className="w-full bg-white px-6 py-20 text-[#040325] sm:px-8 lg:px-10 lg:py-24">
+      <div className="mx-auto grid max-w-[1500px] overflow-hidden rounded-[10px] lg:grid-cols-[1fr_2fr]">
+        <div className="min-h-[360px] bg-white lg:min-h-[620px]">
           <img
             src="/Bureau.png"
             alt="Conseiller au téléphone"
-            className="block h-full w-full object-cover"
+            className="block h-full w-full object-cover object-left"
           />
         </div>
 
-        <div className="flex min-h-[320px] items-center bg-[#3f42f5] px-6 py-10 text-white sm:px-8 lg:min-h-[520px] lg:px-14">
-          <div className="w-full max-w-[540px]">
-            <h2
-              className="max-w-[500px] text-[clamp(2.2rem,4.8vw,4.8rem)] font-semibold leading-[1.08] tracking-[-0.02em]"
-              style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}
-            >
+        <div className="flex min-h-[360px] items-center bg-[#3f42f5] px-8 py-12 text-white sm:px-10 lg:min-h-[620px] lg:px-16">
+          <div className="w-full max-w-[640px]">
+            <h2 className="max-w-[620px] text-[clamp(2.5rem,5vw,3.2rem)] font-semibold leading-[1.06] tracking-[-0.02em]">
               Réduisons votre fiscalité maintenant
             </h2>
 
-            <div className="mt-6 lg:mt-8">
+            <div className="mt-8">
               <AppointmentCard />
             </div>
           </div>

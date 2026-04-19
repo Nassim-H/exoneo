@@ -16,7 +16,7 @@ export default function MentionsLegalesPage() {
       <section id="mentions-legales" className="rounded-[8px] bg-white px-6 py-7 text-[#040325] sm:px-8 lg:px-10">
             <h2
               className="text-[clamp(1.6rem,3vw,2.35rem)] font-semibold leading-[1.08] tracking-[-0.02em]"
-              style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}
+
             >
               Mentions légales
             </h2>

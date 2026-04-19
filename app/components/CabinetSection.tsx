@@ -18,15 +18,15 @@ const vectors = [
 
 function CabinetVectors() {
   return (
-    <div className="mx-auto grid w-full max-w-[340px] grid-cols-3 lg:max-w-[390px]">
+    <div className="mx-auto grid w-full max-w-[420px] grid-cols-3 lg:mx-0 lg:max-w-[500px]">
       {vectors.map((vector, index) => (
         <img
           key={vector.src}
           src={vector.src}
           alt={vector.alt}
           className={[
-            "block h-auto w-full",
-            index === 2 || index === 5 ? "max-w-[100px] justify-self-center" : "max-w-[98px] justify-self-center",
+            "block h-auto w-full justify-self-center",
+            index === 2 || index === 5 ? "max-w-[132px]" : "max-w-[124px]",
           ].join(" ")}
         />
       ))}
@@ -36,18 +36,15 @@ function CabinetVectors() {
 
 export default function CabinetSection() {
   return (
-    <section className="bg-white px-6 py-20 text-[#040325] sm:px-8 lg:px-10 lg:py-[96px] " id='a-propos'>
-      <div className="mx-auto max-w-[1280px]">
-        <div className="grid items-center gap-14 lg:grid-cols-[1.05fr_0.95fr] lg:gap-20">
-          <div className="max-w-[560px]">
-            <h2
-              className="text-[clamp(2.25rem,4vw,3.15rem)] font-semibold leading-[1.06] tracking-[-0.02em] text-[#040325]"
-              style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}
-            >
+    <section className="bg-white px-6 py-28 text-[#040325] sm:px-8 lg:px-10 lg:py-[128px]" id="a-propos">
+      <div className="mx-auto max-w-[1500px]">
+        <div className="grid items-center gap-16 lg:grid-cols-[1.08fr_0.92fr] lg:gap-24">
+          <div className="max-w-[760px]">
+            <h2 className="text-[clamp(2.5rem,4.5vw,3.4rem)] font-semibold leading-[1.08] tracking-[-0.02em] text-[#040325]">
               Le cabinet Exonéo
             </h2>
 
-            <div className="mt-8 space-y-5 text-[15px] leading-[1.35] text-[#3a4252] sm:text-[16px] lg:text-[17px]">
+            <div className="mt-10 space-y-6 text-[18px] leading-[1.7] text-[#3a4252] lg:text-[20px]">
               {paragraphs.map((paragraph) => (
                 <p key={paragraph}>{paragraph}</p>
               ))}
