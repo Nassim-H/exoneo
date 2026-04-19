@@ -68,7 +68,7 @@ export default function InfosSection() {
 
         <div className="mt-20 flex justify-center">
           <a
-            href="#reservation"
+            href="https://forms.gle/s4Dc2FMC87wEpVse8"
             className="inline-flex h-[52px] items-center justify-center rounded-[6px] bg-[#4141f5] px-7 text-[18px] font-bold leading-[1.4] text-white transition-all duration-200 hover:-translate-y-0.5 hover:opacity-90"
           >
             Réserver un appel gratuit
