@@ -6,8 +6,8 @@ export default function CitationSection() {
           
           <div className="mt-10 hidden h-px flex-1 bg-white/60 lg:block" />
 
-          <blockquote className="mx-auto max-w-[720px] text-center text-[24px]  leading-[1.45] tracking-[0.01em] text-white sm:text-[26px]">
-            En moyenne, nos clients découvrent qu'ils ont payé bien plus que nécessaire :
+          <blockquote className="mx-auto max-w-[720px] text-center text-[18px] font-bold leading-[1.45] tracking-[0.01em] text-white">
+            En moyenne, une entreprise perd plusieurs milliers d’euros par an à cause d’une fiscalité mal optimisée :
             mauvais choix de statut, exonérations ignorées, options fiscales oubliées... 
             Combien d'années d'exonération laissez-vous passer ?
           </blockquote>

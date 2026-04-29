@@ -52,7 +52,7 @@ export default function TestimonialSection() {
             </div>
           </div>
 
-          <blockquote className="mx-auto mt-8 max-w-[760px] text-[18px] font-semibold leading-[1.45] text-[#2e2e2e] sm:text-[20px]">
+          <blockquote className="mx-auto mt-8 max-w-[760px] text-[18px] font-semibold leading-[1.45] text-[#2e2e2e]">
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
             tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae
             erat."

@@ -13,7 +13,7 @@ export default function PolitiqueConfidentialitePage() {
       description="Informations relatives au traitement des données personnelles sur le site Exonéo."
     >
       <section className="rounded-[8px] bg-white px-6 py-7 text-[#040325] sm:px-8 lg:px-10">
-        <div className="space-y-5 text-[15px] leading-[1.5] text-[#2f3244] sm:text-[16px]">
+        <div className="space-y-5 text-[18px] leading-[1.4] text-[#2f3244]">
           <p>
             Le présent document constitue la politique de confidentialité (ci-après la « Politique ») du présent site
             internet (ci-après le « Site internet »).

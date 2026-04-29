@@ -40,11 +40,11 @@ export default function CabinetSection() {
       <div className="mx-auto max-w-[1500px]">
         <div className="grid items-center gap-16 lg:grid-cols-[1.08fr_0.92fr] lg:gap-24">
           <div className="max-w-[760px]">
-            <h2 className="text-[clamp(2.5rem,4.5vw,3.4rem)] font-semibold leading-[1.08] tracking-[-0.02em] text-[#040325]">
+            <h2 className="text-[clamp(3rem,4.5vw,3.5rem)] font-semibold leading-[1.08] tracking-[-0.02em] text-[#040325]">
               Le cabinet Exonéo
             </h2>
 
-            <div className="mt-10 space-y-6 text-[18px] leading-[1.7] text-[#3a4252] lg:text-[20px]">
+            <div className="mt-10 space-y-6 text-[18px] leading-[1.45] text-[#3a4252]">
               {paragraphs.map((paragraph) => (
                 <p key={paragraph}>{paragraph}</p>
               ))}

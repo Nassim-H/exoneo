@@ -15,13 +15,13 @@ export default function MentionsLegalesPage() {
     >
       <section id="mentions-legales" className="rounded-[8px] bg-white px-6 py-7 text-[#040325] sm:px-8 lg:px-10">
             <h2
-              className="text-[clamp(1.6rem,3vw,2.35rem)] font-semibold leading-[1.08] tracking-[-0.02em]"
+              className="text-[clamp(3rem,3vw,3.5rem)] font-semibold leading-[1.08] tracking-[-0.02em]"
 
             >
               Mentions légales
             </h2>
 
-            <div className="mt-6 space-y-4 text-[15px] leading-[1.5] text-[#2f3244] sm:text-[16px]">
+            <div className="mt-6 space-y-4 text-[18px] leading-[1.4] text-[#2f3244]">
               <p>
                 Le présent site internet (ci-après le « Site internet ») est édité par deux cabinets d’avocats exerçant à
                 titre individuel, dont les informations sont les suivantes :

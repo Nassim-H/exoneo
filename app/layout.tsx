@@ -12,7 +12,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="h-full antialiased">
+    <html lang="fr" className="h-full antialiased">
       <head>
         <link rel="stylesheet" href="https://use.typekit.net/pcq5qif.css" />
       </head>

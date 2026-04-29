@@ -58,11 +58,11 @@ export default function Faq() {
       <div className="mx-auto max-w-[1500px]">
         <div className="mx-auto max-w-[1080px]">
           <header className="text-center">
-            <h2 className="text-[clamp(2.5rem,4.5vw,3.4rem)] font-semibold leading-[1.08] tracking-[-0.02em] text-[#05052a]">
+            <h2 className="text-[clamp(3rem,4.5vw,3.5rem)] font-semibold leading-[1.08] tracking-[-0.02em] text-[#05052a]">
               Questions fréquentes
             </h2>
 
-            <p className="mt-5 text-[22px] leading-[1.4] text-[#4141f5] sm:text-[24px]">
+            <p className="mt-5 text-[18px] leading-[1.3] text-[#4141f5]">
               Les réponses aux questions que vous vous posez avant de prendre rendez-vous.
             </p>
           </header>
@@ -70,12 +70,12 @@ export default function Faq() {
           <div className="mt-16 space-y-[2px]">
             {faqItems.map((item) => (
               <details key={item.question} className="group border-b border-[#4141f5]">
-                <summary className="flex cursor-pointer list-none items-center justify-between gap-8 py-6 text-[24px] font-normal leading-[1.3] text-[#1a1a1a] marker:content-none">
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-8 py-6 text-[18px] font-normal leading-[1.2] text-[#1a1a1a] marker:content-none">
                   <span>{item.question}</span>
                   <Chevron />
                 </summary>
 
-                <div className="pb-8 pr-10 text-[20px] leading-[1.6] text-[#2e3245]">
+                <div className="pb-8 pr-10 text-[18px] leading-[1.45] text-[#2e3245]">
                   {item.answer.map((paragraph) => (
                     <p key={paragraph} className="mt-4 first:mt-0">
                       {paragraph}

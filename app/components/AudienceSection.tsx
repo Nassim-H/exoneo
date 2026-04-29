@@ -60,11 +60,11 @@ export default function AudienceSection() {
     <section className="bg-[#f5fbff] px-6 py-24 text-[#040325] sm:px-8 lg:px-10 lg:py-28">
       <div className="mx-auto max-w-[1500px]">
         <div className="mx-auto max-w-[920px] text-center">
-          <h2 className="text-balance text-[clamp(2.4rem,4.5vw,3rem)] font-semibold leading-[1.2] text-[#040325]">
+          <h2 className="text-balance text-[clamp(3rem,4.5vw,3.5rem)] font-semibold leading-[1.2] text-[#040325]">
             À qui s'adresse notre expertise ?
           </h2>
 
-          <p className="mx-auto mt-4 max-w-[760px] text-[20px] leading-[1.5] text-[#205fed]">
+          <p className="mx-auto mt-4 max-w-[760px] text-[18px] leading-[1.4] text-[#205fed]">
             Notre cabinet accompagne trois profils de clients dont les besoins fiscaux
             nécessitent une approche spécialisée.
           </p>
@@ -86,27 +86,27 @@ export default function AudienceSection() {
                 />
               </div>
 
-              <h3 className="mt-6 text-[22px] font-semibold leading-[1.4] text-[#4141f5]">
+              <h3 className="mt-6 text-[22px] font-semibold leading-[1.2] text-[#4141f5]">
                 {card.title}
               </h3>
 
-              <p className="mt-3 text-[18px] leading-[1.5] text-[#5e697a]">
+              <p className="mt-3 text-[18px] leading-[1.4] text-[#5e697a]">
                 {card.subtitle}
               </p>
 
-              <p className="mt-4 text-[18px] leading-[1.5] text-[#5e697a]">
+              <p className="mt-4 text-[18px] leading-[1.4] text-[#5e697a]">
                 {card.description}
               </p>
 
-              <p className="mt-5 text-[16px] font-semibold leading-[1.5] text-[#4141f5]">
+              <p className="mt-5 text-[16px] font-semibold leading-[1.3] text-[#4141f5]">
                 {card.helpTitle}
               </p>
 
-              <ul className="mt-3 space-y-3 text-[18px] leading-[1.5] text-[#5e697a]">
+              <ul className="mt-3 space-y-3 text-[18px] leading-[1.4] text-[#5e697a]">
                 {card.bullets.map((bullet) => (
                   <li
                     key={bullet}
-  className="relative pl-6 text-[18px] leading-[1.5] text-[#5e697a] before:absolute before:left-0 before:top-[11px] before:h-2 before:w-2 before:rounded-full before:bg-[#4141f5] before:content-['']"
+  className="relative pl-6 text-[18px] leading-[1.4] text-[#5e697a] before:absolute before:left-0 before:top-[11px] before:h-2 before:w-2 before:rounded-full before:bg-[#4141f5] before:content-['']"
                   >
                     {bullet}
                   </li>

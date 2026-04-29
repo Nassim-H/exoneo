@@ -34,11 +34,11 @@ export default function DemarcheSection() {
     <section className="bg-white px-6 py-28 text-[#040325] sm:px-8 lg:px-10 lg:py-[128px]" id="services">
       <div className="mx-auto max-w-[1500px]">
         <div className="mx-auto max-w-[980px] text-center">
-          <h2 className="text-balance text-[clamp(2.5rem,5vw,3.2rem)] font-semibold leading-[1.15] text-[#040325]">
+          <h2 className="text-balance text-[clamp(3rem,5vw,3.5rem)] font-semibold leading-[1.15] text-[#040325]">
             Une démarche claire
           </h2>
 
-          <p className="mx-auto mt-5 max-w-[820px] text-[20px] leading-[1.5] text-[#205fed]">
+          <p className="mx-auto mt-5 max-w-[820px] text-[18px] leading-[1.4] text-[#205fed]">
             Notre objectif : vous faire passer d'une situation floue à une structure fiscalement
             optimisée, étape par étape, avec une visibilité totale sur le processus.
           </p>
@@ -56,7 +56,7 @@ export default function DemarcheSection() {
                 {step.title}
               </h3>
 
-              <p className="mx-auto mt-4 max-w-[380px] text-[18px] leading-[1.6] text-[#5e697a]">
+              <p className="mx-auto mt-4 max-w-[380px] text-[18px] leading-[1.45] text-[#5e697a]">
                 {step.description}
               </p>
 

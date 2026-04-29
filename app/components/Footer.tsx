@@ -9,7 +9,7 @@ export default function Footer() {
             <div className="w-full md:max-w-[720px]">
               <Link
                 href="/"
-                className="inline-block text-[58px] font-semibold italic leading-none tracking-[-0.03em] text-white"
+                className="inline-block text-[56px] font-semibold italic leading-none tracking-[-0.03em] text-white"
                 aria-label="Accueil Exonéo"
               >
                 exonéo
@@ -17,9 +17,9 @@ export default function Footer() {
             </div>
 
             <div className="w-full max-w-[340px] space-y-5">
-              <h3 className="text-[18px] font-semibold leading-[1.5] text-white">Contact</h3>
+              <h3 className="text-[18px] font-semibold leading-[1.2] text-white">Contact</h3>
 
-              <div className="space-y-4 text-[18px] leading-[1.6] text-[#dfe5ee]">
+              <div className="space-y-4 text-[18px] leading-[1.4] text-[#dfe5ee]">
                 <Link href="/#reservation" className="block transition-opacity hover:opacity-85">
                   Réserver votre appel découverte
                 </Link>
@@ -32,11 +32,11 @@ export default function Footer() {
           </div>
 
           <div className="mt-14 flex w-full flex-col gap-5 border-t border-[#80c1fc] pt-8 md:flex-row md:items-center md:justify-between">
-            <p className="text-[15px] leading-[1.5] text-white">
+            <p className="text-[18px] leading-[1.4] text-white">
               © 2026 exonéo. Tous droits réservés.
             </p>
 
-            <div className="flex flex-wrap items-center gap-x-8 gap-y-3 text-[15px] leading-[1.5] text-white">
+            <div className="flex flex-wrap items-center gap-x-8 gap-y-3 text-[18px] leading-[1.4] text-white">
               <Link href="/mentions-legales" className="transition-opacity hover:opacity-85">
                 Mentions légales
               </Link>

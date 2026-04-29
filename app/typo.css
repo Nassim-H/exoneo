@@ -105,7 +105,7 @@
   font-family: "degular", sans-serif;
   font-weight: 400;
   font-size: 18px;
-  line-height: 120%; /* 21.6px */
+  line-height: 140%; /* 25.2px */
   letter-spacing: 0;
   color: var(--text-primary);
 }
@@ -116,7 +116,7 @@
   font-family: "degular", sans-serif;
   font-weight: 600;
   font-size: 18px;
-  line-height: 150%; /* 27px */
+  line-height: 140%; /* 25.2px */
   letter-spacing: 0;
   color: var(--text-primary);
 }
@@ -127,7 +127,7 @@
   font-family: "degular", sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 150%; /* 27px */
+  line-height: 140%; /* 25.2px */
   letter-spacing: 0;
   color: var(--text-dark);
 }
@@ -137,8 +137,8 @@
 .body {
   font-family: "degular", sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 150%; /* 24px */
+  font-size: 18px;
+  line-height: 140%; /* 25.2px */
   letter-spacing: 0;
   color: var(--text-primary);
 }
@@ -148,8 +148,8 @@
 .body-bold {
   font-family: "degular", sans-serif;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 150%; /* 24px */
+  font-size: 18px;
+  line-height: 140%; /* 25.2px */
   letter-spacing: 0;
 }
 
@@ -158,8 +158,8 @@
 .body-semibold {
   font-family: "degular", sans-serif;
   font-weight: 600;
-  font-size: 16px;
-  line-height: 150%; /* 24px */
+  font-size: 18px;
+  line-height: 140%; /* 25.2px */
   letter-spacing: 0;
   color: var(--text-primary);
 }
@@ -169,8 +169,8 @@
 .body-stat-number {
   font-family: "degular", sans-serif;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 150%; /* 30px */
+  font-size: 18px;
+  line-height: 140%; /* 25.2px */
   letter-spacing: 0;
   color: var(--text-primary);
 }
@@ -180,8 +180,8 @@
 .body-stat-text {
   font-family: "degular", sans-serif;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 150%; /* 30px */
+  font-size: 18px;
+  line-height: 140%; /* 25.2px */
   letter-spacing: 0;
   color: var(--text-primary);
 }
@@ -191,8 +191,8 @@
 .body-step-title {
   font-family: "degular", sans-serif;
   font-weight: 600;
-  font-size: 20px;
-  line-height: 109%; /* ~21.8px */
+  font-size: 18px;
+  line-height: 105%; /* ~18.9px */
   letter-spacing: 0;
   color: var(--text-primary);
 }
@@ -203,7 +203,7 @@
   font-family: "degular", sans-serif;
   font-weight: 400;
   font-size: 14px;
-  line-height: 150%; /* 21px */
+  line-height: 140%; /* 19.6px */
   letter-spacing: 0;
   color: var(--text-gray);
 }
@@ -214,7 +214,7 @@
   font-family: "degular", sans-serif;
   font-weight: 600;
   font-size: 14px;
-  line-height: 150%; /* 21px */
+  line-height: 140%; /* 19.6px */
   letter-spacing: 0;
   color: var(--text-brand);
 }
@@ -252,7 +252,7 @@
   font-family: "Instrument Sans", sans-serif;
   font-weight: 400;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 18px;
   letter-spacing: 0;
   color: var(--text-gray);
 }
@@ -263,7 +263,7 @@
   font-family: "Instrument Sans", sans-serif;
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 22px;
   letter-spacing: 0;
 }
 
@@ -273,7 +273,7 @@
   font-family: "Instrument Sans", sans-serif;
   font-weight: 500;
   font-size: 18px;
-  line-height: 28px;
+  line-height: 24px;
   letter-spacing: 0;
   color: var(--text-gray-medium);
 }
@@ -284,7 +284,7 @@
   font-family: "Instrument Sans", sans-serif;
   font-weight: 500;
   font-size: 14px;
-  line-height: 22.75px;
+  line-height: 20px;
   letter-spacing: 0;
   color: var(--text-gray-medium);
 }
@@ -295,7 +295,7 @@
   font-family: "Instrument Sans", sans-serif;
   font-weight: 400;
   font-size: 14px;
-  line-height: 22.75px;
+  line-height: 20px;
   letter-spacing: 0;
   color: #000000;
 }
@@ -312,7 +312,7 @@
   font-family: "Instrument Serif", serif;
   font-weight: 400;
   font-size: 30px;
-  line-height: 36px;
+  line-height: 32px;
   letter-spacing: 0;
   color: #000000;
 }

@@ -39,7 +39,7 @@ export default function InfosSection() {
             Les questions que vous vous posez
           </h2>
 
-          <p className="mx-auto mt-5 max-w-[820px] text-[20px] leading-[1.5] text-[#205fed]">
+          <p className="mx-auto mt-5 max-w-[820px] text-[18px] leading-[1.4] text-[#205fed]">
             Beaucoup de professionnels partagent ce constat : une fiscalité qui pèse, une
             structure qui mériterait d'être revue, mais ni le temps ni la clarté pour s'en occuper.
           </p>
@@ -48,7 +48,7 @@ export default function InfosSection() {
         <div className="mt-20 grid gap-12 lg:grid-cols-3 lg:gap-10">
           {columns.map((column) => (
             <div key={column.title} className="flex flex-col">
-              <h3 className="pb-5 text-[24px] font-bold leading-[1.35] text-[#040325]">
+              <h3 className="pb-5 text-[24px] font-bold leading-[1.2] text-[#040325]">
                 {column.title}
               </h3>
 
@@ -56,7 +56,7 @@ export default function InfosSection() {
                 {column.items.map((item) => (
                   <div
                     key={item}
-                    className="border-l-[3px] border-[#4141f5] pl-5 text-[18px] leading-[1.6] text-[#5e697a]"
+                    className="border-l-[3px] border-[#4141f5] pl-5 text-[18px] leading-[1.45] text-[#5e697a]"
                   >
                     {item}
                   </div>

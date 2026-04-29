@@ -15,7 +15,7 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-[#C8E9FD] bg-white">
-      <div className="mx-auto grid h-[86px] w-full max-w-[1700px] grid-cols-[auto_1fr_auto] items-center px-4 sm:px-6 lg:px-10">
+      <div className="relative mx-auto flex h-[86px] w-full max-w-[1700px] items-center px-4 sm:px-6 lg:px-10">
         
         {/* Logo */}
         <div className="justify-self-start">
@@ -32,12 +32,12 @@ export default function Navbar() {
         </div>
 
         {/* Menu centré */}
-        <nav className="hidden items-center justify-center gap-8 md:flex lg:gap-10">
+        <nav className="pointer-events-none absolute left-1/2 hidden -translate-x-1/2 items-center justify-center gap-8 md:flex lg:gap-10">
           {navItems.map((item) => (
             <a
               key={item.label}
               href={item.href}
-              className="text-[16px] font-medium tracking-[-0.01em] text-[#040325] transition-opacity hover:opacity-60"
+              className="pointer-events-auto text-[16px] font-medium tracking-[-0.01em] text-[#040325] transition-opacity hover:opacity-60"
             >
               {item.label}
             </a>
@@ -45,7 +45,7 @@ export default function Navbar() {
         </nav>
 
         {/* CTA droite */}
-        <div className="hidden justify-self-end md:block">
+        <div className="hidden md:ml-auto md:block">
           <a
             href="https://forms.gle/s4Dc2FMC87wEpVse8"
             target="_blank"

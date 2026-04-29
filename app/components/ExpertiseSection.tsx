@@ -64,7 +64,7 @@ export default function ExpertiseSection() {
     <section className="overflow-hidden bg-white px-6 py-28 text-[#040325] sm:px-8 lg:px-10 lg:py-[128px]">
       <div className="mx-auto max-w-[1500px]">
         <div className="mx-auto max-w-[980px] text-center">
-          <h2 className="text-balance text-[clamp(2.5rem,5vw,3.2rem)] font-semibold leading-[1.15] text-[#040325]">
+          <h2 className="text-balance text-[clamp(3rem,5vw,3.5rem)] font-semibold leading-[1.15] text-[#040325]">
             Une expertise qui change la donne
           </h2>
         </div>
@@ -83,7 +83,7 @@ export default function ExpertiseSection() {
                 {card.title}
               </h3>
 
-              <p className="mx-auto mt-5 max-w-[380px] text-[18px] leading-[1.6] text-[#2e2e2e]">
+              <p className="mx-auto mt-5 max-w-[380px] text-[18px] leading-[1.45] text-[#2e2e2e]">
                 {card.description}
               </p>
             </article>
