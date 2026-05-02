@@ -74,7 +74,7 @@ export default function AudienceSection() {
           {cards.map((card) => (
             <article
               key={card.title}
-              className="flex h-full flex-col rounded-[10px] border border-[#c8e9fd] bg-white px-8 py-8 shadow-[0_0_0_1px_rgba(255,255,255,0.5)]"
+              className="flex h-full flex-col rounded-[10px] border border-[#c8e9fd] bg-white px-8 py-8  shadow-[0_0_0_1px_rgba(255,255,255,0.5)]"
             >
               <div className={`flex h-11 w-11 items-center justify-center rounded-[6px] ${card.iconBg}`}>
                 <Image
@@ -86,27 +86,27 @@ export default function AudienceSection() {
                 />
               </div>
 
-              <h3 className="mt-6 text-[22px] font-semibold leading-[1.2] text-[#4141f5]">
+              <h3 className="mt-6 text-[20px] font-semibold leading-[1.2] text-[#4141f5]">
                 {card.title}
               </h3>
 
-              <p className="mt-3 text-[18px] leading-[1.4] text-[#5e697a]">
+              <p className="mt-3 text-[16px] leading-[1.4] text-[#5e697a]">
                 {card.subtitle}
               </p>
 
-              <p className="mt-4 text-[18px] leading-[1.4] text-[#5e697a]">
+              <p className="mt-4 text-[14px] leading-[1.4] text-[#5e697a]">
                 {card.description}
               </p>
 
-              <p className="mt-5 text-[16px] font-semibold leading-[1.3] text-[#4141f5]">
+              <p className="mt-5 text-[14px] font-semibold leading-[1.3] text-[#4141f5]">
                 {card.helpTitle}
               </p>
 
-              <ul className="mt-3 space-y-3 text-[18px] leading-[1.4] text-[#5e697a]">
+              <ul className="mt-3 space-y-3 text-[14px] leading-[1.4] text-[#5e697a] pb-12">
                 {card.bullets.map((bullet) => (
                   <li
                     key={bullet}
-  className="relative pl-6 text-[18px] leading-[1.4] text-[#5e697a] before:absolute before:left-0 before:top-[11px] before:h-2 before:w-2 before:rounded-full before:bg-[#4141f5] before:content-['']"
+  className="relative pl-6 text-[14px] leading-[1.4] text-[#5e697a] before:absolute before:left-0 before:top-[11px] before:h-2 before:w-2 before:rounded-full before:bg-[#4141f5] before:content-['']"
                   >
                     {bullet}
                   </li>
