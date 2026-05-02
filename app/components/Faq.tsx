@@ -58,7 +58,7 @@ export default function Faq() {
       <div className="mx-auto max-w-[1280px]">
         <div className="mx-auto max-w-[1080px]">
           <header className="text-center">
-            <h2 className="text-[clamp(3rem,4.5vw,3.5rem)] font-semibold leading-[1.08] tracking-[-0.02em] text-[#05052a] text-[40px]">
+            <h2 className=" font-semibold leading-[1.08] tracking-[-0.02em] text-[#05052a] text-[40px]">
               Questions fréquentes
             </h2>
 

@@ -57,7 +57,7 @@ export default function ExpertiseSection() {
       <div className="mx-auto max-w-[1280px]">
         {/* Titre */}
         <div className="mx-auto max-w-[980px] text-center">
-          <h2 className="text-balance text-[clamp(3rem,5vw,3.5rem)] font-semibold leading-[1.15] text-[#040325] text-[40px]">
+          <h2 className="text-balance font-semibold leading-[1.15] text-[#040325] text-[40px]">
             Une expertise qui change la donne
           </h2>
         </div>

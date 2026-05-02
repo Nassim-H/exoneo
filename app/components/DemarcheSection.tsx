@@ -34,7 +34,7 @@ export default function DemarcheSection() {
     <section className="bg-white px-6 py-28 text-[#040325] sm:px-8 lg:px-10 lg:py-[128px]" id="services">
       <div className="mx-auto max-w-[1280px]">
         <div className="mx-auto max-w-[980px] text-center">
-          <h2 className="text-balance text-[clamp(3rem,5vw,3.5rem)] font-semibold leading-[1.15] text-[#040325] text-[40px]">
+          <h2 className="text-balance  font-semibold leading-[1.15] text-[#040325] text-[40px]">
             Une démarche claire
           </h2>
 

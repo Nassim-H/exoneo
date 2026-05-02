@@ -35,7 +35,7 @@ export default function InfosSection() {
     <section className="bg-white px-6 py-28 text-[#040325] sm:px-8 lg:px-10 lg:py-[128px]">
       <div className="mx-auto max-w-[1280px]">
         <div className="mx-auto max-w-[980px] text-center">
-          <h2 className="text-balance text-[clamp(2.5rem,5vw,3.2rem)] font-semibold leading-[1.15] text-[#040325] text-[40px]">
+          <h2 className="text-balance  font-semibold leading-[1.15] text-[#040325] text-[40px]">
             Les questions que vous vous posez
           </h2>
 

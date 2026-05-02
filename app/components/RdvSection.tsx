@@ -53,7 +53,7 @@ export default function RdvSection() {
 
         <div className="flex min-h-[360px] items-center bg-[#3f42f5] px-8 py-12 text-white sm:px-10 lg:min-h-[620px] lg:px-16">
           <div className="w-full max-w-[640px]">
-            <h2 className="max-w-[620px] text-[clamp(3rem,5vw,3.5rem)] font-semibold leading-[1.06] tracking-[-0.02em]">
+            <h2 className="max-w-[620px] text-[40px] font-semibold leading-[1.06] tracking-[-0.02em]">
               Réduisons votre fiscalité maintenant
             </h2>
 
