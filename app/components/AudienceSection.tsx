@@ -58,9 +58,9 @@ const cards: AudienceCard[] = [
 export default function AudienceSection() {
   return (
     <section className="bg-[#f5fbff] px-6 py-24 text-[#040325] sm:px-8 lg:px-10 lg:py-28">
-      <div className="mx-auto max-w-[1500px]">
+      <div className="mx-auto max-w-[1280px]">
         <div className="mx-auto max-w-[920px] text-center">
-          <h2 className="text-balance text-[clamp(3rem,4.5vw,3.5rem)] font-semibold leading-[1.2] text-[#040325]">
+          <h2 className="text-balance text-[clamp(3rem,4.5vw,3.5rem)] font-semibold leading-[1.2] text-[#040325]  text-[40px] ">
             À qui s'adresse notre expertise ?
           </h2>
 

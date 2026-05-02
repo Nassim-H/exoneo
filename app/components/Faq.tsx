@@ -55,10 +55,10 @@ function Chevron() {
 export default function Faq() {
   return (
     <section className="bg-white px-6 py-28 text-[#040325] sm:px-8 lg:px-10 lg:py-[128px]" id="questions">
-      <div className="mx-auto max-w-[1500px]">
+      <div className="mx-auto max-w-[1280px]">
         <div className="mx-auto max-w-[1080px]">
           <header className="text-center">
-            <h2 className="text-[clamp(3rem,4.5vw,3.5rem)] font-semibold leading-[1.08] tracking-[-0.02em] text-[#05052a]">
+            <h2 className="text-[clamp(3rem,4.5vw,3.5rem)] font-semibold leading-[1.08] tracking-[-0.02em] text-[#05052a] text-[40px]">
               Questions fréquentes
             </h2>
 

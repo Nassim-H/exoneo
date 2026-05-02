@@ -37,10 +37,10 @@ function CabinetVectors() {
 export default function CabinetSection() {
   return (
     <section className="bg-white px-6 py-28 text-[#040325] sm:px-8 lg:px-10 lg:py-[128px]" id="a-propos">
-      <div className="mx-auto max-w-[1500px]">
+      <div className="mx-auto max-w-[1280px]">
         <div className="grid items-center gap-16 lg:grid-cols-[1.08fr_0.92fr] lg:gap-24">
           <div className="max-w-[760px]">
-            <h2 className="text-[clamp(3rem,4.5vw,3.5rem)] font-semibold leading-[1.08] tracking-[-0.02em] text-[#040325]">
+            <h2 className="text-[clamp(3rem,4.5vw,3.5rem)] font-semibold leading-[1.08] tracking-[-0.02em] text-[#040325] text-[40px]">
               Le cabinet Exonéo
             </h2>
 
