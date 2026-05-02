@@ -1,3 +1,7 @@
+"use client";
+
+import { motion } from "framer-motion";
+
 type FaqItem = {
   question: string;
   answer: string[];
@@ -47,42 +51,74 @@ function Chevron() {
       aria-hidden="true"
       className="shrink-0 text-[#4141f5] transition-transform duration-200 group-open:rotate-180"
     >
-      <path d="M6 9L12 15L18 9" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+      <path
+        d="M6 9L12 15L18 9"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
     </svg>
   );
 }
 
 export default function Faq() {
   return (
-    <section className="bg-white px-6 py-28 text-[#040325] sm:px-8 lg:px-10 lg:py-[128px]" id="questions">
+    <section
+      className="bg-white px-6 py-28 text-[#040325] sm:px-8 lg:px-10 lg:py-[128px]"
+      id="questions"
+    >
       <div className="mx-auto max-w-[1280px]">
         <div className="mx-auto max-w-[1080px]">
-          <header className="text-center">
-            <h2 className=" font-semibold leading-[1.08] tracking-[-0.02em] text-[#05052a] text-[40px]">
+          <motion.header
+            initial={{ opacity: 0, y: 28 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            className="text-center"
+          >
+            <h2 className="font-semibold leading-[1.08] tracking-[-0.02em] text-[#05052a] text-[40px]">
               Questions fréquentes
             </h2>
 
             <p className="mt-5 text-[18px] leading-[1.3] text-[#4141f5]">
-              Les réponses aux questions que vous vous posez avant de prendre rendez-vous.
+              Les réponses aux questions que vous vous posez avant de prendre
+              rendez-vous.
             </p>
-          </header>
+          </motion.header>
 
           <div className="mt-16 space-y-[2px]">
-            {faqItems.map((item) => (
-              <details key={item.question} className="group border-b border-[#4141f5]">
+            {faqItems.map((item, index) => (
+              <motion.details
+                key={item.question}
+                initial={{ opacity: 0, y: 24 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.25 }}
+                transition={{
+                  duration: 0.45,
+                  delay: index * 0.1,
+                  ease: "easeOut",
+                }}
+                className="group border-b border-[#4141f5]"
+              >
                 <summary className="flex cursor-pointer list-none items-center justify-between gap-8 py-6 text-[16px] font-normal leading-[1.2] text-[#1a1a1a] marker:content-none">
                   <span>{item.question}</span>
                   <Chevron />
                 </summary>
 
-                <div className="pb-8 pr-10 text-[14px] leading-[1.45] text-[#2e3245]">
+                <motion.div
+                  initial={{ opacity: 0, height: 0 }}
+                  whileInView={{ opacity: 1, height: "auto" }}
+                  transition={{ duration: 0.25, ease: "easeOut" }}
+                  className="overflow-hidden pb-8 pr-10 text-[14px] leading-[1.45] text-[#2e3245]"
+                >
                   {item.answer.map((paragraph) => (
                     <p key={paragraph} className="mt-4 first:mt-0">
                       {paragraph}
                     </p>
                   ))}
-                </div>
-              </details>
+                </motion.div>
+              </motion.details>
             ))}
           </div>
         </div>
