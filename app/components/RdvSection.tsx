@@ -19,11 +19,11 @@ function AppointmentCard() {
         </svg>
 
         <div>
-          <p className="text-[18px] font-medium leading-[1.2] text-black">
+          <p className="text-[16px] font-medium leading-[1.2] text-black">
             Appel découverte offert (15 min)
           </p>
 
-          <p className="mt-2 text-[18px] leading-[1.4] text-neutral-600">
+          <p className="mt-2 text-[14px] leading-[1.4] text-neutral-600">
             Vérifiez dès maintenant que nous sommes le bon interlocuteur pour votre situation.
           </p>
         </div>
@@ -31,7 +31,7 @@ function AppointmentCard() {
 
       <a
         href="https://forms.gle/s4Dc2FMC87wEpVse8"
-        className="mt-6 inline-flex h-[52px] w-full items-center justify-center rounded-[6px] bg-[#4a46f2] px-5 text-[18px] font-semibold text-white transition-opacity hover:opacity-90"
+        className="mt-6 inline-flex h-[52px] w-full items-center justify-center rounded-[6px] bg-[#4a46f2] px-5 text-[16px] font-semibold text-white transition-opacity hover:opacity-90"
       >
         Réserver un appel gratuit
       </a>

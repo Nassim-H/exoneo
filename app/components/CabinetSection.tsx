@@ -44,7 +44,7 @@ export default function CabinetSection() {
               Le cabinet Exonéo
             </h2>
 
-            <div className="mt-10 space-y-6 text-[18px] leading-[1.45] text-[#3a4252]">
+            <div className="mt-10 space-y-6 text-[16px] leading-[1.45] text-[#3a4252]">
               {paragraphs.map((paragraph) => (
                 <p key={paragraph}>{paragraph}</p>
               ))}

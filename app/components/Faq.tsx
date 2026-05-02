@@ -70,12 +70,12 @@ export default function Faq() {
           <div className="mt-16 space-y-[2px]">
             {faqItems.map((item) => (
               <details key={item.question} className="group border-b border-[#4141f5]">
-                <summary className="flex cursor-pointer list-none items-center justify-between gap-8 py-6 text-[18px] font-normal leading-[1.2] text-[#1a1a1a] marker:content-none">
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-8 py-6 text-[16px] font-normal leading-[1.2] text-[#1a1a1a] marker:content-none">
                   <span>{item.question}</span>
                   <Chevron />
                 </summary>
 
-                <div className="pb-8 pr-10 text-[18px] leading-[1.45] text-[#2e3245]">
+                <div className="pb-8 pr-10 text-[14px] leading-[1.45] text-[#2e3245]">
                   {item.answer.map((paragraph) => (
                     <p key={paragraph} className="mt-4 first:mt-0">
                       {paragraph}
