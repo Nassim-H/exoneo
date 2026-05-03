@@ -29,8 +29,10 @@ export default function Footer() {
 
               <div className="space-y-4 text-[16px] leading-[1.4] text-[#dfe5ee]">
                 <Link
-                  href="/#reservation"
+                  href="https://forms.gle/s4Dc2FMC87wEpVse8"
                   className="block transition-opacity hover:opacity-85"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Réserver votre appel découverte
                 </Link>
