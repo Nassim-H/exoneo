@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
 
 type AudienceCard = {
   icon: string;
@@ -63,13 +62,7 @@ export default function AudienceSection() {
   return (
     <section className="bg-[#f5fbff] px-6 py-24 text-[#040325] sm:px-8 lg:px-10 lg:py-28">
       <div className="mx-auto max-w-[1280px]">
-        <motion.div
-          initial={{ opacity: 0, y: 28 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.4 }}
-          transition={{ duration: 0.65, ease: "easeOut" }}
-          className="mx-auto max-w-[920px] text-center"
-        >
+        <div className="mx-auto max-w-[920px] text-center">
           <h2 className="text-balance text-[clamp(3rem,4.5vw,3.5rem)] font-semibold leading-[1.2] text-[#040325]">
             À qui s'adresse notre expertise ?
           </h2>
@@ -78,29 +71,15 @@ export default function AudienceSection() {
             Notre cabinet accompagne trois profils de clients dont les besoins
             fiscaux nécessitent une approche spécialisée.
           </p>
-        </motion.div>
+        </div>
 
         <div className="mt-16 grid gap-8 lg:grid-cols-3">
-          {cards.map((card, index) => (
-            <motion.article
+          {cards.map((card) => (
+            <article
               key={card.title}
-              initial={{ opacity: 0, y: 45 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.25 }}
-              transition={{
-                duration: 0.55,
-                delay: index * 0.12,
-                ease: "easeOut",
-              }}
-              whileHover={{
-                y: -8,
-                transition: { duration: 0.2 },
-              }}
               className="flex h-full flex-col rounded-[10px] border border-[#c8e9fd] bg-white px-8 py-8 shadow-[0_0_0_1px_rgba(255,255,255,0.5)]"
             >
-              <motion.div
-                whileHover={{ rotate: 6, scale: 1.08 }}
-                transition={{ type: "spring", stiffness: 300, damping: 18 }}
+              <div
                 className={`flex h-11 w-11 items-center justify-center rounded-[6px] ${card.iconBg}`}
               >
                 <Image
@@ -110,7 +89,7 @@ export default function AudienceSection() {
                   height={24}
                   className="h-6 w-6"
                 />
-              </motion.div>
+              </div>
 
               <h3 className="mt-6 text-[20px] font-semibold leading-[1.2] text-[#4141f5]">
                 {card.title}
@@ -129,24 +108,16 @@ export default function AudienceSection() {
               </p>
 
               <ul className="mt-3 space-y-3 pb-12 text-[14px] leading-[1.4] text-[#5e697a]">
-                {card.bullets.map((bullet, bulletIndex) => (
-                  <motion.li
+                {card.bullets.map((bullet) => (
+                  <li
                     key={bullet}
-                    initial={{ opacity: 0, x: -12 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                    transition={{
-                      duration: 0.35,
-                      delay: index * 0.12 + bulletIndex * 0.08,
-                      ease: "easeOut",
-                    }}
-                    className="relative pl-6 text-[14px] leading-[1.4] text-[#5e697a] before:absolute before:left-0 before:top-[11px] before:h-2 before:w-2 before:rounded-full before:bg-[#4141f5] before:content-['']"
+                    className="relative pl-6 before:absolute before:left-0 before:top-[11px] before:h-2 before:w-2 before:rounded-full before:bg-[#4141f5] before:content-['']"
                   >
                     {bullet}
-                  </motion.li>
+                  </li>
                 ))}
               </ul>
-            </motion.article>
+            </article>
           ))}
         </div>
       </div>

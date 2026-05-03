@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
 
 type Card = {
   icon: "euros" | "target";
@@ -43,13 +42,7 @@ function CardIcon({ icon }: { icon: Card["icon"] }) {
 
 function PersonIllustration() {
   return (
-    <motion.div
-      initial={{ opacity: 0, x: 80 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.7, delay: 0.3, ease: "easeOut" }}
-      className="absolute bottom-0 right-0 h-full w-auto"
-    >
+    <div className="absolute bottom-0 right-0 h-full w-auto">
       <Image
         src="/Profil.png"
         alt="Profil"
@@ -57,7 +50,7 @@ function PersonIllustration() {
         height={980}
         className="h-full w-auto object-contain object-bottom"
       />
-    </motion.div>
+    </div>
   );
 }
 
@@ -67,45 +60,25 @@ export default function ExpertiseSection() {
       <div className="mx-auto max-w-[1280px]">
         
         {/* Titre */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-          className="mx-auto max-w-[980px] text-center"
-        >
+        <div className="mx-auto max-w-[980px] text-center">
           <h2 className="text-balance font-semibold leading-[1.15] text-[#040325] text-[40px]">
             Une expertise qui change la donne
           </h2>
-        </motion.div>
+        </div>
 
         {/* Grid */}
         <div className="mt-20 grid items-stretch gap-8 lg:grid-cols-[1fr_1fr_1fr]">
           
-          {cards.map((card, i) => (
-            <motion.article
+          {cards.map((card) => (
+            <article
               key={card.title}
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.3 }}
-              transition={{
-                duration: 0.5,
-                delay: i * 0.15,
-                ease: "easeOut",
-              }}
-              whileHover={{
-                y: -8,
-                scale: 1.02,
-              }}
               className="flex h-full mt-15 flex-col rounded-[8px] bg-[#f5fbff] px-8 py-10 text-center shadow-[0_0_0_1px_rgba(200,233,253,0.5)]"
             >
-              <motion.div
-                whileHover={{ rotate: 8, scale: 1.1 }}
-                transition={{ type: "spring", stiffness: 300 }}
+              <div
                 className={`mx-auto flex h-11 w-11 items-center justify-center rounded-[6px] ${card.iconBg}`}
               >
                 <CardIcon icon={card.icon} />
-              </motion.div>
+              </div>
 
               <h3 className="mt-7 text-[28px] font-bold leading-[1.35] text-[#040325]">
                 {card.title}
@@ -114,7 +87,7 @@ export default function ExpertiseSection() {
               <p className="mx-auto mt-5 max-w-[380px] text-[16px] leading-[1.45] text-[#2e2e2e]">
                 {card.description}
               </p>
-            </motion.article>
+            </article>
           ))}
 
           {/* Image */}

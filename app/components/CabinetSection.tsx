@@ -88,45 +88,21 @@ export default function CabinetSection() {
     >
       <div className="mx-auto max-w-[1280px]">
         <div className="grid items-center gap-16 lg:grid-cols-[1.08fr_0.92fr] lg:gap-24">
-          <motion.div
-            initial={{ opacity: 0, x: -45 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, amount: 0.35 }}
-            transition={{ duration: 0.65, ease: "easeOut" }}
-            className="max-w-[760px]"
-          >
+          <div className="max-w-[760px]">
             <h2 className="font-semibold leading-[1.08] tracking-[-0.02em] text-[#040325] text-[40px]">
               Le cabinet Exonéo
             </h2>
 
             <div className="mt-10 space-y-6 text-[16px] leading-[1.45] text-[#3a4252]">
-              {paragraphs.map((paragraph, index) => (
-                <motion.p
-                  key={paragraph}
-                  initial={{ opacity: 0, y: 18 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{
-                    duration: 0.45,
-                    delay: 0.15 + index * 0.06,
-                    ease: "easeOut",
-                  }}
-                >
-                  {paragraph}
-                </motion.p>
+              {paragraphs.map((paragraph) => (
+                <p key={paragraph}>{paragraph}</p>
               ))}
             </div>
-          </motion.div>
+          </div>
 
-          <motion.div
-            initial={{ opacity: 0, x: 45 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, amount: 0.35 }}
-            transition={{ duration: 0.65, delay: 0.15, ease: "easeOut" }}
-            className="flex justify-center lg:justify-end"
-          >
+          <div className="flex justify-center lg:justify-end">
             <CabinetVectors />
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

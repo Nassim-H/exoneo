@@ -35,17 +35,14 @@ const steps: Step[] = [
 
 export default function DemarcheSection() {
   return (
-    <section className="bg-white px-6 py-28 text-[#040325] sm:px-8 lg:px-10 lg:py-[128px]" id="services">
+    <section
+      className="bg-white px-6 py-28 text-[#040325] sm:px-8 lg:px-10 lg:py-[128px]"
+      id="services"
+    >
       <div className="mx-auto max-w-[1280px]">
 
-        {/* TITRE */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="mx-auto max-w-[980px] text-center"
-        >
+        {/* TITRE (SANS ANIMATION) */}
+        <div className="mx-auto max-w-[980px] text-center">
           <h2 className="text-balance font-semibold leading-[1.15] text-[#040325] text-[40px]">
             Une démarche claire
           </h2>
@@ -53,19 +50,19 @@ export default function DemarcheSection() {
           <p className="mx-auto mt-5 max-w-[820px] text-[18px] leading-[1.4] text-[#205fed]">
             Notre objectif : vous faire passer d'une situation floue à une structure fiscalement optimisée...
           </p>
-        </motion.div>
+        </div>
 
         {/* STEPS */}
         <div className="mt-20 grid gap-14 lg:grid-cols-3 lg:gap-10">
           {steps.map((step, i) => (
             <motion.article
               key={step.number}
-              initial={{ opacity: 0, x: -60 }} // arrive de la gauche
+              initial={{ opacity: 0, x: -60 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, amount: 0.4 }}
               transition={{
                 duration: 0.5,
-                delay: i * 0.25, // 👈 cascade gauche → droite
+                delay: i * 0.25,
                 ease: "easeOut",
               }}
               className="text-center"
