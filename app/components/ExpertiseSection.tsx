@@ -36,12 +36,12 @@ function CardIcon({ icon }: { icon: Card["icon"] }) {
 
 function PersonIllustration() {
   return (
-    <div className="absolute bottom-0 right-[calc(50%-40vw+120px)] h-[520px] lg:h-[620px]">
+    <div className="absolute bottom-0 right-[calc(50%-40vw+120px)] h-[400px] lg:h-[500px]">
       <Image
         src="/Profil.svg"
         alt="Profil"
-        width={706}
-        height={980}
+        width={500}
+        height={700}
         className="h-full w-auto object-contain object-bottom scale-x-[-1]"
       />
     </div>
@@ -60,12 +60,11 @@ export default function ExpertiseSection() {
         </div>
 
         {/* Grid */}
-        <div className="mt-20 grid gap-8 lg:grid-cols-[1fr_1fr_1fr] lg:items-center">
+        <div className="mt-10 grid gap-8 lg:grid-cols-[1fr_1fr_1fr] lg:items-center pt-10">
           {cards.map((card) => (
             <article
               key={card.title}
-              className="flex min-h-[320px] flex-col justify-center rounded-[8px] bg-[#f5fbff] px-8 py-8 text-center shadow-[0_0_0_1px_rgba(200,233,253,0.5)] lg:translate-y-6"
-            >
+className="flex min-h-[320px] flex-col justify-center rounded-[8px] bg-[#f5fbff] px-8 py-8 text-center shadow-[0_0_0_1px_rgba(200,233,253,0.5)] lg:translate-y-20"            >
               <div
                 className={`mx-auto flex h-11 w-11 items-center justify-center rounded-[6px] ${card.iconBg}`}
               >
