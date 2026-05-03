@@ -36,13 +36,13 @@ function CardIcon({ icon }: { icon: Card["icon"] }) {
 
 function PersonIllustration() {
   return (
-    <div className="absolute bottom-0 right-[calc(50%-35vw+100px)] h-[520px] lg:h-[620px]">
+    <div className="absolute bottom-0 right-[calc(50%-40vw+120px)] h-[520px] lg:h-[620px]">
       <Image
         src="/Profil.svg"
         alt="Profil"
-        width={7060}
+        width={706}
         height={980}
-        className="h-full w-auto object-contain object-bottom"
+        className="h-full w-auto object-contain object-bottom scale-x-[-1]"
       />
     </div>
   );
