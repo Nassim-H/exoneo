@@ -40,10 +40,10 @@ function AppointmentCard() {
 
 export default function RdvSection() {
   return (
-    <section className="w-full overflow-hidden bg-white py-20 text-[#040325] lg:py-24">
+    <section className="w-full overflow-hidden bg-white py-16 text-[#040325] lg:py-24">
       <div className="mx-auto grid w-full max-w-[1500px] px-6 sm:px-8 lg:grid-cols-[1fr_2fr] lg:px-10">
         {/* IMAGE */}
-        <div className="min-h-[360px] overflow-hidden rounded-l-[10px] bg-white lg:min-h-[620px]">
+        <div className="hidden min-h-[360px] overflow-hidden rounded-l-[10px] bg-white lg:block lg:min-h-[620px]">
           <img
             src="/Bureau.png"
             alt="Conseiller au téléphone"
@@ -52,18 +52,18 @@ export default function RdvSection() {
         </div>
 
         {/* BLOC BLEU */}
-        <div className="relative min-h-[360px] bg-[#3f42f5] text-white lg:min-h-[620px]">
-          {/* Extension uniquement vers la droite */}
-          <div className="absolute inset-y-0 left-0 w-[100vw] bg-[#3f42f5]" />
+        <div className="relative min-h-[360px] rounded-[10px] bg-[#3f42f5] text-white lg:min-h-[620px] lg:rounded-none">
+          {/* Extension uniquement vers la droite - desktop only */}
+          <div className="hidden lg:absolute lg:inset-y-0 lg:left-0 lg:block lg:w-[100vw] lg:bg-[#3f42f5]" />
 
           {/* Contenu */}
-          <div className="relative z-10 flex h-full items-center px-8 py-12 sm:px-10 lg:px-16">
-            <div className="ml-auto w-full max-w-[640px]">
-              <h2 className="max-w-[620px] text-[40px] font-semibold leading-[1.06] tracking-[-0.02em]">
+          <div className="relative z-10 flex h-full items-center px-5 py-10 sm:px-8 lg:px-16 lg:py-12">
+            <div className="mx-auto w-full max-w-[640px] lg:ml-auto">
+              <h2 className="max-w-[620px] text-center text-[34px] font-semibold leading-[1.08] tracking-[-0.02em] sm:text-[40px] lg:text-left lg:text-[40px] lg:leading-[1.06]">
                 Réduisons votre fiscalité maintenant
               </h2>
 
-              <div className="mt-8">
+              <div className="mt-7 lg:mt-8">
                 <AppointmentCard />
               </div>
             </div>

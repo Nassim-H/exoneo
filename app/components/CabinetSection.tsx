@@ -15,38 +15,26 @@ const vectors = [
   {
     src: "/VectorJaune.svg",
     alt: "",
-    initial: { opacity: 0, y: -50, rotate: -20, scale: 0.8 },
-    animate: { opacity: 1, y: 0, rotate: 0, scale: 1 },
   },
   {
     src: "/VectorRose.svg",
     alt: "",
-    initial: { opacity: 0, x: 50, rotate: 25, scale: 0.7 },
-    animate: { opacity: 1, x: 0, rotate: 0, scale: 1 },
   },
   {
     src: "/VectorNoir.svg",
     alt: "",
-    initial: { opacity: 0, scale: 0.4, rotate: 180 },
-    animate: { opacity: 1, scale: 1, rotate: 0 },
   },
   {
     src: "/VectorBleu.svg",
     alt: "",
-    initial: { opacity: 0, x: -50, rotate: -25, scale: 0.8 },
-    animate: { opacity: 1, x: 0, rotate: 0, scale: 1 },
   },
   {
     src: "/VectorVert.svg",
     alt: "",
-    initial: { opacity: 0, y: 50, rotate: 18, scale: 0.75 },
-    animate: { opacity: 1, y: 0, rotate: 0, scale: 1 },
   },
   {
     src: "/VectorRond.svg",
     alt: "",
-    initial: { opacity: 0, scale: 0, rotate: -180 },
-    animate: { opacity: 1, scale: 1, rotate: 0 },
   },
 ];
 
@@ -58,17 +46,13 @@ function CabinetVectors() {
           key={vector.src}
           src={vector.src}
           alt={vector.alt}
-          initial={vector.initial}
-          whileInView={vector.animate}
-          viewport={{ once: true, amount: 0.4 }}
-          transition={{
-            duration: 0.6,
-            delay: index * 0.16,
-            ease: "easeOut",
-          }}
           whileHover={{
             scale: 1.08,
             rotate: index % 2 === 0 ? 4 : -4,
+          }}
+          transition={{
+            duration: 0.25,
+            ease: "easeOut",
           }}
           className={[
             "block h-auto w-full justify-self-center",
@@ -89,7 +73,7 @@ export default function CabinetSection() {
       <div className="mx-auto max-w-[1280px]">
         <div className="grid items-center gap-16 lg:grid-cols-[1.08fr_0.92fr] lg:gap-24">
           <div className="max-w-[760px]">
-            <h2 className="font-semibold leading-[1.08] tracking-[-0.02em] text-[#040325] text-[40px]">
+            <h2 className="text-[40px] font-semibold leading-[1.08] tracking-[-0.02em] text-[#040325]">
               Le cabinet Exonéo
             </h2>
 

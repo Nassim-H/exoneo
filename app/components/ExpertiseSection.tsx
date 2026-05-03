@@ -82,7 +82,7 @@ className="flex min-h-[320px] flex-col justify-center rounded-[8px] bg-[#f5fbff]
           ))}
 
           {/* Image */}
-          <div className="relative min-h-[520px] -mb-28 lg:min-h-[620px] lg:-mb-[128px]">
+          <div className="relative hidden lg:block min-h-[520px] -mb-28 lg:min-h-[620px] lg:-mb-[128px]">
             <PersonIllustration />
           </div>
         </div>
