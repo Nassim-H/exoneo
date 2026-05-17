@@ -40,7 +40,7 @@ const vectors = [
 
 function CabinetVectors() {
   return (
-    <div className="mx-auto grid w-full max-w-[420px] grid-cols-3 lg:mx-0 lg:max-w-[500px]">
+    <div className="mx-auto grid w-fit grid-cols-3 gap-0 lg:mx-0">
       {vectors.map((vector, index) => (
         <motion.img
           key={vector.src}
@@ -54,10 +54,7 @@ function CabinetVectors() {
             duration: 0.25,
             ease: "easeOut",
           }}
-          className={[
-            "block h-auto w-full justify-self-center",
-            index === 2 || index === 5 ? "max-w-[132px]" : "max-w-[124px]",
-          ].join(" ")}
+          className="block h-[140px] w-[140px]"
         />
       ))}
     </div>
