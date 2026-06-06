@@ -15,6 +15,7 @@ const logos = [
 export default function TrustedBySection() {
   const duplicated = [...logos, ...logos];
 
+  
   return (
     <section className="overflow-hidden bg-[#f5fbff] py-10">
       <div className="mx-auto max-w-[1280px] px-6">
