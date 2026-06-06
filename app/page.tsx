@@ -10,6 +10,8 @@ import Navbar from "./components/NavBar";
 import RdvSection from "./components/RdvSection";
 import Faq from "./components/Faq";
 import Footer from "./components/Footer";
+import LogoMarquee from "./components/Logo";
+import Testimonial from "./components/Testimonial";
 
 export default function HomePage() {
   return (
@@ -17,9 +19,10 @@ export default function HomePage() {
       <Navbar />
       <main>
         <Hero />
+        <LogoMarquee />
         <AudienceSection />
         <CitationSection />
-        {/* <TestimonialSection /> */}
+        <TestimonialSection /> 
         <InfosSection />
         <ExpertiseSection />
         <DemarcheSection />

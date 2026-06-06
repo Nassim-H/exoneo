@@ -25,8 +25,7 @@ export default function CitationSection() {
             transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
             className="mx-auto max-w-[720px] text-center text-[20px] font-bold leading-[1.45] tracking-[0.01em] text-white"
           >
-            En moyenne, une entreprise perd plusieurs milliers d’euros par an à cause d’une fiscalité mal optimisée :
-            mauvais choix de statut, exonérations ignorées, options fiscales oubliées... 
+            En moyenne, une entreprise perd plusieurs milliers d’euros par an à cause d’une fiscalité mal optimisé.
             <br className="hidden sm:block" />
             <span className="block mt-2">
               Combien d'années d'exonération laissez-vous passer ?

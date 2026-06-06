@@ -54,7 +54,7 @@ const testimonials = [
     role: "Fondateur de MJ Conseil",
   },
   {
-    logo: "/logos/lamaisondunettoyage.svg",
+    logo: "/logos/lamaisondunettoyage2.svg",
     savings: "12 000€ économisés",
     quote:
       "Le cabinet m’a accompagné avec beaucoup de pertinence dans l’optimisation de ma fiscalité. Équipe professionnelle et à l'écoute.",
@@ -94,8 +94,8 @@ export default function TestimonialsSection() {
           </span>
         </div>
 
-        {/* Conteneur fixe */}
-        <div className="mx-auto flex min-h-[500px] max-w-5xl flex-col justify-between">
+        {/* Conteneur à hauteur fixe */}
+        <div className="mx-auto flex min-h-[540px] max-w-5xl flex-col justify-between">
           <AnimatePresence mode="wait">
             <motion.div
               key={active}
@@ -106,20 +106,18 @@ export default function TestimonialsSection() {
               className="flex flex-1 flex-col items-center text-center"
             >
               {/* Logo */}
-              <div className="mb-12 flex h-24 items-center justify-center">
+              <div className="mb-10 flex h-16 items-center justify-center">
                 {testimonials[active].logo && (
                   <img
                     src={testimonials[active].logo}
                     alt={testimonials[active].role}
-                    className="max-h-20 w-auto object-contain"
-                    style={{ minWidth: "80px", minHeight: "40px" }}
-
+                    className="max-h-14 w-auto object-contain"
                   />
                 )}
               </div>
 
               {/* Témoignage */}
-              <blockquote className="min-h-[220px] max-w-3xl text-lg font-semibold leading-relaxed text-[#040325] md:text-2xl">
+              <blockquote className="min-h-[260px] max-w-4xl text-xl font-semibold leading-relaxed text-[#040325] md:text-3xl">
                 "{testimonials[active].quote}"
               </blockquote>
 
@@ -142,10 +140,10 @@ export default function TestimonialsSection() {
               <button
                 key={index}
                 onClick={() => setActive(index)}
-                className={`h-2.5 rounded-full transition-all duration-300 ${
+                className={`h-2.5 w-2.5 rounded-full transition-all duration-300 ${
                   active === index
                     ? "w-8 bg-blue-600"
-                    : "w-2.5 bg-blue-200 hover:bg-blue-300"
+                    : "bg-blue-200 hover:bg-blue-300"
                 }`}
               />
             ))}

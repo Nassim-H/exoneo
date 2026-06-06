@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-
+import 'country-flag-emoji-polyfill';
 export const metadata: Metadata = {
   title: "Exonéo | Avocats fiscalistes",
   description: "Cabinet d'avocats fiscalistes pour professions libérales, freelances et TPE/PME.",
