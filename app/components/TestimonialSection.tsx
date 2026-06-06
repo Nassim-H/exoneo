@@ -38,7 +38,7 @@ const testimonials = [
     role: "K. Consulting",
   },
   {
-    logo: "/logos/Awzel2.svg",
+    logo: "/logos/awzel2.svg",
     savings: "3 000€ économisés",
     quote:
       "En tant que freelance, j’ai été accompagné dès la création de mon activité, et cela m’a permis de partir sur des bases solides. L’équipe m’a orienté vers une structure adaptée, en veillant à limiter les frais au lancement. Un accompagnement clair, efficace et rassurant pour démarrer.",
