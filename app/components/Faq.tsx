@@ -26,10 +26,18 @@ const faqItems: FaqItem[] = [
   },
   {
     question: "La consultation est-elle payante ?",
-    answer: [
-      "À l’issue de la consultation, la prestation recommandée ainsi que le tarif de l’accompagnement vous sont communiqués en toute transparence.",
-    ],
-  },
+
+  answer: [
+    "L’appel découverte de 15 minutes est entièrement gratuit et sans engagement.",
+
+    "En revanche, une consultation approfondie avec un avocat, comprenant un échange en visioconférence ainsi que, le cas échéant, un avis écrit, est facturée en fonction de la complexité du dossier.",
+
+    "Cette consultation n’est pas systématique et dépend de la situation exposée.",
+
+    "Les honoraires, au forfait ou au temps passé, sont déterminés d’un commun accord avec le client.",
+  ],
+},
+
   {
     question: "Je travaille déjà avec un expert-comptable, est-ce compatible ?",
     answer: [

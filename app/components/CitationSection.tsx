@@ -25,7 +25,7 @@ export default function CitationSection() {
             transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
             className="mx-auto max-w-[720px] text-center text-[20px] font-bold leading-[1.45] tracking-[0.01em] text-white"
           >
-            En moyenne, une entreprise perd plusieurs milliers d’euros par an à cause d’une fiscalité mal optimisé.
+            En moyenne, une entreprise perd plusieurs milliers d’euros par an à cause d’une fiscalité mal optimisée.
             
           </motion.blockquote>
 
