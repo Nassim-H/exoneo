@@ -53,21 +53,21 @@ export default function CabinetSection() {
         <div className="grid items-center gap-16 lg:grid-cols-[1.08fr_0.92fr] lg:gap-24">
           <div className="max-w-[760px]">
            <h2 className="flex items-center gap-2 text-[40px] font-semibold leading-[1.02] tracking-[-0.02em] text-[#040325]">
-  Le cabinet Exonéo
-  <img
-    src="/fr.svg"
-    width={36}
-    height={36}
-    alt="France"
-    style={{ transform: 'translateY(3px)' }}
-  />
-  <img
-    src="/lu.svg"
-    width={36}
-    height={36}
-    alt="Luxembourg"
-    style={{ transform: 'translateY(3px)' }}
-  />
+          Le cabinet Exonéo
+          <img
+            src="/fr.svg"
+            width={36}
+            height={36}
+            alt="France"
+            style={{ transform: 'translateY(3px)' }}
+          />
+          <img
+            src="/lu.svg"
+            width={36}
+            height={36}
+            alt="Luxembourg"
+            style={{ transform: 'translateY(3px)' }}
+          />
 </h2>
            
 
