@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Flag from "./TwemojiFlag";
 
 const paragraphs = [
   "Exoneo est un cabinet réunissant des avocats fiscalistes expérimentés, intervenant en France et au Luxembourg.",
@@ -71,7 +72,8 @@ export default function CabinetSection() {
         <div className="grid items-center gap-16 lg:grid-cols-[1.08fr_0.92fr] lg:gap-24">
           <div className="max-w-[760px]">
             <h2 className="flex items-center gap-3 text-[40px] font-semibold leading-[1.08] tracking-[-0.02em] text-[#040325]">
-        <span>Le cabinet Exonéo 🇫🇷🇱🇺 </span>
+        <span>Le cabinet Exonéo <Flag countryCode="fr" size={20} /> <Flag countryCode="lu" size={20} />
+</span>
 
       </h2>
             
