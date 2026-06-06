@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Flag from "./TwemojiFlag";
 
 const paragraphs = [
   "Exoneo est un cabinet réunissant des avocats fiscalistes expérimentés, intervenant en France et au Luxembourg.",
@@ -13,30 +12,12 @@ const paragraphs = [
 ];
 
 const vectors = [
-  {
-    src: "/VectorJaune.svg",
-    alt: "",
-  },
-  {
-    src: "/VectorRose.svg",
-    alt: "",
-  },
-  {
-    src: "/VectorNoir.svg",
-    alt: "",
-  },
-  {
-    src: "/VectorBleu.svg",
-    alt: "",
-  },
-  {
-    src: "/VectorVert.svg",
-    alt: "",
-  },
-  {
-    src: "/VectorRond.svg",
-    alt: "",
-  },
+  { src: "/VectorJaune.svg", alt: "" },
+  { src: "/VectorRose.svg", alt: "" },
+  { src: "/VectorNoir.svg", alt: "" },
+  { src: "/VectorBleu.svg", alt: "" },
+  { src: "/VectorVert.svg", alt: "" },
+  { src: "/VectorRond.svg", alt: "" },
 ];
 
 function CabinetVectors() {
@@ -71,12 +52,24 @@ export default function CabinetSection() {
       <div className="mx-auto max-w-[1280px]">
         <div className="grid items-center gap-16 lg:grid-cols-[1.08fr_0.92fr] lg:gap-24">
           <div className="max-w-[760px]">
-            <h2 className="flex items-center gap-3 text-[40px] font-semibold leading-[1.08] tracking-[-0.02em] text-[#040325]">
-        <span>Le cabinet Exonéo <Flag countryCode="fr" size={20} /> <Flag countryCode="lu" size={20} />
-</span>
-
-      </h2>
-            
+           <h2 className="flex items-center gap-2 text-[40px] font-semibold leading-[1.02] tracking-[-0.02em] text-[#040325]">
+  Le cabinet Exonéo
+  <img
+    src="/fr.svg"
+    width={36}
+    height={36}
+    alt="France"
+    style={{ transform: 'translateY(3px)' }}
+  />
+  <img
+    src="/lu.svg"
+    width={36}
+    height={36}
+    alt="Luxembourg"
+    style={{ transform: 'translateY(3px)' }}
+  />
+</h2>
+           
 
             <div className="mt-10 space-y-6 text-[16px] leading-[1.45] text-[#3a4252]">
               {paragraphs.map((paragraph) => (
