@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { Analytics } from '@vercel/analytics/next';
+
 import "./globals.css";
 import 'country-flag-emoji-polyfill';
 export const metadata: Metadata = {
@@ -16,7 +18,10 @@ export default function RootLayout({
       <head>
         <link rel="stylesheet" href="https://use.typekit.net/pcq5qif.css" />
       </head>
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        {children}
+        <Analytics />
+        </body>
     </html>
   );
 }

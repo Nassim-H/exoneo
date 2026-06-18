@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@twemoji/api": "^17.0.3",
+    "@vercel/analytics": "^2.0.1",
     "country-flag-emoji-polyfill": "^0.1.8",
     "framer-motion": "^12.38.0",
     "lucide-react": "^1.17.0",
