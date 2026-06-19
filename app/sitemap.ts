@@ -1,16 +1,23 @@
-import { MetadataRoute } from 'next'
+import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const baseUrl = "https://ton-domaine.com";
+
   return [
     {
-      url: 'https://cabinet-exoneo.com',
+      url: baseUrl,
       lastModified: new Date(),
-      changeFrequency: 'weekly',
       priority: 1,
     },
     {
-      url: 'https://cabinet-exoneo.com/contact',
+      url: `${baseUrl}/mentions-legales`,
       lastModified: new Date(),
+      priority: 0.3,
     },
-  ]
+    {
+      url: `${baseUrl}/politique-confidentialite`,
+      lastModified: new Date(),
+      priority: 0.3,
+    },
+  ];
 }

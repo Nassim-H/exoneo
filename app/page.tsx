@@ -11,8 +11,13 @@ import RdvSection from "./components/RdvSection";
 import Faq from "./components/Faq";
 import Footer from "./components/Footer";
 import LogoMarquee from "./components/Logo";
-import Testimonial from "./components/Testimonial";
 import Hero2 from "./components/Hero2";
+
+export const metadata = {
+  title: "Avocats fiscalistes pour freelances, professions libérales et TPE/PME",
+  description:
+    "Réduisez votre charge fiscale avec Exonéo, cabinet d’avocats fiscalistes accompagnant freelances, professions libérales et TPE/PME en France et au Luxembourg.",
+};
 
 export default function HomePage() {
   return (

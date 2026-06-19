@@ -138,9 +138,12 @@ export default function TestimonialsSection() {
 
           {/* Pagination */}
           <div className="mt-12 flex justify-center gap-2">
-            {testimonials.map((_, index) => (
+            {testimonials.map((testimonial, index) => (
               <button
-                key={index}
+                key={testimonial.name}
+                type="button"
+                aria-label={`Afficher le témoignage de ${testimonial.name}`}
+                aria-current={active === index ? "true" : undefined}
                 onClick={() => setActive(index)}
                 className={`h-2.5 rounded-full transition-all duration-300 ${
                   active === index
