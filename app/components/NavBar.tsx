@@ -5,9 +5,9 @@ import Link from "next/link";
 import Image from "next/image";
 
 const navItems = [
-  { label: "Services", href: "#services" },
-  { label: "Questions", href: "#questions" },
-  { label: "À propos", href: "#a-propos" },
+  { label: "Services", href: "/#services" },
+  { label: "Questions", href: "/#questions" },
+  { label: "À propos", href: "/#a-propos" },
 ];
 
 export default function Navbar() {

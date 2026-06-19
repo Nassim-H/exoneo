@@ -28,8 +28,9 @@ function AppointmentCard() {
         </div>
       </div>
 
-      <a
-        href="https://forms.gle/s4Dc2FMC87wEpVse8"
+      <a 
+        target="_blank"
+        href="https://forms.gle/s4Dc2FMC87wEpVse8" 
         className="mt-6 inline-flex h-[52px] w-full items-center justify-center rounded-[6px] bg-[#4a46f2] px-5 text-[16px] font-semibold text-white transition-opacity hover:opacity-90"
       >
         Réserver un appel gratuit

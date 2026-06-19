@@ -1,36 +1,267 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Cabinet Exoneo – Documentation du projet
 
-## Getting Started
+## Présentation
 
-First, run the development server:
+Site vitrine développé avec :
+
+* Next.js
+* TypeScript
+* Tailwind CSS
+* Vercel (hébergement)
+
+Le site est déployé automatiquement à chaque modification du dépôt GitHub.
+
+## Accès
+
+Le propriétaire du projet doit disposer des accès suivants :
+
+### GitHub
+
+Contient le code source du projet.
+
+### Vercel
+
+Gère l'hébergement et les déploiements.
+
+### Domaine
+
+Le nom de domaine doit appartenir au client.
+
+### Google Search Console
+
+Permet le suivi SEO et l'indexation du site.
+
+### Google Analytics
+
+Permet le suivi des visiteurs.
+
+## Installation du projet
+
+### Cloner le dépôt
+
+```bash
+git clone <URL_DU_REPO>
+```
+
+### Installer les dépendances
+
+```bash
+npm install
+```
+
+### Lancer le projet en local
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Le site sera accessible sur :
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```txt
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Build de production
 
-## Learn More
+Créer le build :
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run build
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Lancer le build :
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm start
+```
 
-## Deploy on Vercel
+## Déploiement
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Le projet est connecté à Vercel.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Chaque push sur la branche principale déclenche automatiquement :
+
+1. Build du projet.
+2. Déploiement.
+3. Mise en ligne.
+
+Aucune intervention manuelle n'est nécessaire.
+
+## Variables d'environnement
+
+Les variables sont configurées dans :
+
+```txt
+Vercel > Settings > Environment Variables
+```
+
+Exemples :
+
+```env
+NEXT_PUBLIC_SITE_URL=
+RESEND_API_KEY=
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
+```
+
+Les clés sensibles ne doivent jamais être stockées dans le code.
+
+## Structure du projet
+
+```txt
+app/
+components/
+lib/
+public/
+styles/
+```
+
+## Images
+
+Les images sont stockées dans :
+
+```txt
+public/
+```
+
+Exemples :
+
+```txt
+public/images/
+public/logos/
+```
+
+## Modification du contenu
+
+### FAQ
+
+Fichier :
+
+```txt
+À compléter
+```
+
+### Témoignages
+
+Fichier :
+
+```txt
+À compléter
+```
+
+### Logos partenaires
+
+Dossier :
+
+```txt
+public/logos
+```
+
+### Métadonnées SEO
+
+Fichier :
+
+```txt
+app/layout.tsx
+```
+
+Contient :
+
+* title
+* description
+* Open Graph
+* réseaux sociaux
+
+### robots.txt
+
+Fichier :
+
+```txt
+public/robots.txt
+```
+
+### sitemap.xml
+
+Fichier :
+
+```txt
+public/sitemap.xml
+```
+
+## Dépendances principales
+
+* Next.js
+* React
+* TypeScript
+* Tailwind CSS
+* Framer Motion
+
+## Procédure pour modifier le site
+
+1. Modifier les fichiers souhaités.
+2. Vérifier le résultat localement :
+
+```bash
+npm run dev
+```
+
+3. Sauvegarder les changements :
+
+```bash
+git add .
+git commit -m "Description des modifications"
+```
+
+4. Envoyer les modifications :
+
+```bash
+git push
+```
+
+5. Attendre le déploiement automatique sur Vercel.
+
+## Sauvegarde
+
+Le code source est disponible sur GitHub.
+
+Il est recommandé d'effectuer des sauvegardes régulières.
+
+## Reprise du projet par un autre développeur
+
+Le projet peut être repris par n'importe quel développeur maîtrisant :
+
+* Next.js
+* React
+* TypeScript
+* Tailwind CSS
+
+Toutes les ressources nécessaires appartiennent au client :
+
+* code source ;
+* hébergement ;
+* nom de domaine ;
+* outils SEO et statistiques.
+
+Le client reste propriétaire de l'ensemble du projet.
+
+## Maintenance
+
+La livraison du site correspond à sa version initiale.
+
+Les modifications futures, nouvelles fonctionnalités ou évolutions feront l'objet d'une prestation distincte.
+
+## Contact
+
+Développeur :
+
+Nom :
+
+Email :
+
+Téléphone :
+
+Date de livraison :
+
+Version :
+
+1.0

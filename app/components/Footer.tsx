@@ -41,7 +41,7 @@ export default function Footer() {
                   href="mailto:contact@exoneo.fr"
                   className="block transition-opacity hover:opacity-85"
                 >
-                  contact@cabinet-exoneo.fr
+                  contact@cabinet-exoneo.com
                 </a>
               </div>
             </div>
