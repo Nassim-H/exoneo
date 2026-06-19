@@ -12,13 +12,14 @@ import Faq from "./components/Faq";
 import Footer from "./components/Footer";
 import LogoMarquee from "./components/Logo";
 import Testimonial from "./components/Testimonial";
+import Hero2 from "./components/Hero2";
 
 export default function HomePage() {
   return (
     <>
       <Navbar />
       <main>
-        <Hero />
+        <Hero2 />
         <LogoMarquee />
         <AudienceSection />
         <CitationSection />
